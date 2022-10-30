@@ -1,0 +1,43 @@
+.favorite-animal-section {
+  height: 700px;
+  background: url("./assets/images/giant_panda.png") 50% no-repeat;
+  background-color: $color-black;
+  & .container {
+    display: flex;
+    justify-content: end;
+  }
+  & .favorite-animal-section__content {
+    padding-top: 86px;
+  }
+}
+.favorite-animal-section__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 110px;
+    z-index: 1;
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    background: $color-orange;
+  }
+  & h2 {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-bottom: 60px;
+    & span {
+      color: $color-yellow;
+    }
+  }
+}

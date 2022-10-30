@@ -1,0 +1,23 @@
+.button {
+  width: 298px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  padding: 16px 0;
+  background: $color-orange;
+  transition: all 0.5s ease;
+  &:hover {
+    background: linear-gradient(113.96deg, #e47209 1.49%, #e47209 101.44%);
+  }
+  &:active {
+    background: $color-green;
+  }
+  &:disabled {
+    background: $color-gray;
+  }
+}
