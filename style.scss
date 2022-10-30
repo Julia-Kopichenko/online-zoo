@@ -11,6 +11,7 @@
 // sections
 @import "assets/styles/header.scss";
 @import "assets/styles/favorite-animal-section.scss";
+@import "assets/styles/backstage-section.scss";
 
 article,
 aside,
@@ -54,6 +55,8 @@ body {
   font-family: $font-family-main;
   font-size: 1.6rem;
   font-style: normal;
+  width: 1600px;
+  background: #e5e5e5;
 }
 .container {
   margin: 0 auto;
@@ -79,4 +82,3 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-

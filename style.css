@@ -69,8 +69,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -342,7 +341,6 @@ template {
 .menu-item a:hover, .menu-item a:active {
   color: transparent;
   -webkit-background-clip: text;
-          background-clip: text;
   background-image: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 }
 
@@ -431,6 +429,45 @@ template {
   color: #ffee2e;
 }
 
+.backstage-section {
+  background: url("./assets/images/flower_foto1.png") no-repeat top 12px right -93px;
+}
+.backstage-section .backstage-section__content {
+  padding: 140px 0;
+}
+
+.backstage-section__content {
+  align-items: flex-start;
+}
+
+.backstage-section__img-content img {
+  max-width: 100%;
+}
+
+.backstage-section__text-content {
+  max-width: 465px;
+  color: #333b41;
+  margin-left: 50px;
+}
+.backstage-section__text-content h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.backstage-section__text-content p {
+  line-height: 22px;
+}
+.backstage-section__text-content p:first-of-type {
+  margin-bottom: 54px;
+}
+.backstage-section__text-content h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 34px;
+}
+
 article,
 aside,
 details,
@@ -478,6 +515,8 @@ body {
   font-family: "Roboto", Verdana, serif;
   font-size: 1.6rem;
   font-style: normal;
+  width: 1600px;
+  background: #e5e5e5;
 }
 
 .container {
@@ -494,8 +533,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -505,4 +543,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
