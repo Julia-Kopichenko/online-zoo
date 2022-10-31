@@ -10,7 +10,28 @@
   color: $color-white;
   padding: 16px 0;
   background: $color-orange;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
+  &:hover {
+    background: linear-gradient(113.96deg, #e47209 1.49%, #e47209 101.44%);
+  }
+  &:active {
+    background: $color-green;
+  }
+  &:disabled {
+    background: $color-gray;
+  }
+}
+
+.button-ellipse {
+  color: $color-white;
+  text-align: center;
+  width: 62px;
+  height: 62px;
+  background: $color-orange;
+  border-radius: 31px;
+  border: none;
+  cursor: pointer;
+  transition: all 1s ease;
   &:hover {
     background: linear-gradient(113.96deg, #e47209 1.49%, #e47209 101.44%);
   }

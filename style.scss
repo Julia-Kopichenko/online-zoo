@@ -12,6 +12,7 @@
 @import "assets/styles/header.scss";
 @import "assets/styles/favorite-animal-section.scss";
 @import "assets/styles/backstage-section.scss";
+@import "assets/styles/pets-section.scss";
 
 article,
 aside,
@@ -50,13 +51,16 @@ img {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  background: #e5e5e5;
 }
 body {
+  width: 1600px;
+  margin: 0 auto;
   font-family: $font-family-main;
   font-size: 1.6rem;
   font-style: normal;
-  width: 1600px;
-  background: #e5e5e5;
+  background: $color-white;
+  // overflow: hidden;
 }
 .container {
   margin: 0 auto;
