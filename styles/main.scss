@@ -14,40 +14,7 @@
 @import "./layouts/backstage-section.scss";
 @import "./layouts/pets-section.scss";
 @import "./layouts/pick-feed-section.scss";
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
-img {
-  max-width: 100%;
-}
+@import "./layouts/testimonials-section.scss";
 
 html {
   font-size: 10px;
@@ -62,18 +29,6 @@ body {
   font-style: normal;
   background: $color-white;
   // overflow: hidden;
-}
-h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 120%;
-}
-.font_24 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 120%;
 }
 .container {
   margin: 0 auto;

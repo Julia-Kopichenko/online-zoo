@@ -150,7 +150,8 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -159,7 +160,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -303,6 +305,44 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 @font-face {
@@ -474,19 +514,37 @@ template {
 
 .backstage-section__text-content {
   max-width: 465px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
   color: #333b41;
   margin-left: 50px;
 }
 .backstage-section__text-content h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
   margin-bottom: 20px;
 }
 .backstage-section__text-content p {
-  line-height: 22px;
+  line-height: 130%;
 }
 .backstage-section__text-content p:first-of-type {
   margin-bottom: 54px;
 }
+.backstage-section__text-content p:last-of-type {
+  line-height: 140%;
+}
 .backstage-section__text-content h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
   margin-bottom: 34px;
 }
 
@@ -569,14 +627,19 @@ template {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 300;
   font-size: 15px;
+  line-height: 120%;
 }
 .card-text h3 {
-  font-size: 16px;
-  text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
+  font-size: 16px;
   line-height: 140%;
+  text-transform: uppercase;
 }
 
 .pick-feed-section {
@@ -595,6 +658,11 @@ template {
   color: #333b41;
 }
 .pick-feed-section__content h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
   color: #fe9013;
   margin-bottom: 32px;
 }
@@ -602,6 +670,11 @@ template {
   padding-left: 60px;
 }
 .pick-feed-section__content .pick-feed-section__font1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
   margin-bottom: 40px;
 }
 .pick-feed-section__content .pick-feed-section__font2 {
@@ -611,6 +684,8 @@ template {
   margin-bottom: 60px;
 }
 .pick-feed-section__content h3 {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
@@ -618,12 +693,17 @@ template {
 }
 
 .pick-feed-section__font2 {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  line-height: 140%;
   line-height: 130%;
 }
 
 .pick-feed-section__font3 {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
@@ -691,42 +771,115 @@ template {
   padding-top: 30px;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+.testimonials-section {
+  padding: 140px 0;
+  background: url("../assets/images/leav_foto.png") no-repeat bottom right;
+}
+.testimonials-section h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #333b41;
+  margin-bottom: 46px;
+}
+.testimonials-section .testimonials-cards {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.testimonials-section .button-container {
+  justify-content: flex-start;
+  margin-bottom: 174px;
+}
+.testimonials-section .button {
+  border-radius: 5px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.testimonials-cards-container {
+  width: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.testimonials-card {
+  width: 268px;
+  height: 391px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #f1f3f2;
+  background: linear-gradient(#f1f3f2, #f1f3f2) padding-box, linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%) border-box;
+  border: solid 2px transparent;
+  padding: 15px 15px 15px 15px;
 }
 
-a {
-  text-decoration: none;
+.user-photo {
+  width: 37px;
+  height: 37px;
 }
 
-li {
-  list-style: none;
+.one .user-photo {
+  background-image: url("../assets/svg/user_icon.svg");
 }
 
-img {
-  max-width: 100%;
+.two .user-photo {
+  background-image: url("../assets/images/user_icon_2.png");
+}
+
+.three .user-photo {
+  background-image: url("../assets/images/user_icon_3.png");
+}
+
+.four .user-photo {
+  background-image: url("../assets/images/user_icon_4.png");
+}
+
+.user-information {
+  margin-left: 10px;
+}
+.user-information .user-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  line-height: 120%;
+}
+.user-information .local-date {
+  display: flex;
+  align-items: center;
+}
+.user-information .local,
+.user-information .date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+.user-information .point {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #bdbdbd;
+  margin: 0 8px;
+}
+
+.testimonials-card__text {
+  height: 309px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+  margin-top: 10px;
+  overflow: hidden;
 }
 
 html {
@@ -742,20 +895,6 @@ body {
   font-size: 1.6rem;
   font-style: normal;
   background: white;
-}
-
-h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 120%;
-}
-
-.font_24 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 120%;
 }
 
 .container {
