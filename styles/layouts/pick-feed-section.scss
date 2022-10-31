@@ -12,6 +12,7 @@
   padding: 40px 40px 60px 40px;
   color: $color-black-blue;
   & h2 {
+    @include font_48;
     color: $color-orange-light;
     margin-bottom: 32px;
   }
@@ -21,6 +22,7 @@
     padding-left: 60px;
   }
   & .pick-feed-section__font1 {
+    @include font_24;
     margin-bottom: 40px;
   }
   & .pick-feed-section__font2 {
@@ -30,21 +32,16 @@
     margin-bottom: 60px;
   }
   & h3 {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 130%;
+    @include font_36;
     margin-bottom: 40px;
   }
 }
 .pick-feed-section__font2 {
-  font-weight: 500;
-  font-size: 16px;
+  @include font_16_bold;
   line-height: 130%;
 }
 .pick-feed-section__font3 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
+  @include font_16;
   & a {
     color: $color-black-blue;
     border-bottom: 1px solid $color-orange-light;
