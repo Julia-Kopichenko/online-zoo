@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -363,7 +364,7 @@ template {
   color: white;
   padding: 16px 0;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .button:hover {
   background: linear-gradient(113.96deg, #e47209 1.49%, #e47209 101.44%);
@@ -372,6 +373,27 @@ template {
   background: #4b9200;
 }
 .button:disabled {
+  background: #767474;
+}
+
+.button-ellipse {
+  color: white;
+  text-align: center;
+  width: 62px;
+  height: 62px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 31px;
+  border: none;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.button-ellipse:hover {
+  background: linear-gradient(113.96deg, #e47209 1.49%, #e47209 101.44%);
+}
+.button-ellipse:active {
+  background: #4b9200;
+}
+.button-ellipse:disabled {
   background: #767474;
 }
 
@@ -433,7 +455,7 @@ template {
   background: url("./assets/images/flower_foto1.png") no-repeat top 12px right -93px;
 }
 .backstage-section .backstage-section__content {
-  padding: 140px 0;
+  padding: 140px 0 176px 0;
 }
 
 .backstage-section__content {
@@ -466,6 +488,95 @@ template {
   font-size: 24px;
   line-height: 120%;
   margin-bottom: 34px;
+}
+
+.pets-section {
+  background: url("./assets/images/flower_foto2.png") no-repeat bottom left, url("./assets/images/flower_foto3.png") no-repeat bottom right;
+  text-align: center;
+}
+.pets-section .carousel {
+  margin-bottom: 80px;
+}
+.pets-section .button {
+  margin-bottom: 100px;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel .prev {
+  position: absolute;
+  left: -82px;
+  top: 405px;
+}
+.carousel .next {
+  position: absolute;
+  right: -82px;
+  top: 405px;
+}
+
+.pets-cards-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 366px);
+  grid-template-rows: repeat(2, 426px);
+  grid-column-gap: 29px;
+  grid-row-gap: 20px;
+}
+
+.card {
+  max-width: 366px;
+  min-height: 426px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid orange;
+  overflow: hidden;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover img {
+  opacity: 0.7; /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
+  transform: scale(1.1); /* Увеличиваем масштаб */
+}
+.card:hover .card-ifo {
+  opacity: 1;
+}
+
+.card-img {
+  display: inline-block; /* Строчно-блочный элемент */
+  overflow: hidden; /* Скрываем всё за контуром */
+  background: #000; /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+}
+.card-img img {
+  max-width: 100%;
+  width: 366px;
+  height: 366px;
+  opacity: 1;
+  transition: opacity 0.2s linear, transform 0.2s linear; /* Плавное изменение прозрачности и увеличения */
+  display: block; /* Убираем небольшой отступ снизу */
+}
+
+.card-ifo {
+  width: 100%;
+  padding: 8px 12px 8px 16px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 15px;
+}
+.card-text h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 140%;
 }
 
 article,
@@ -509,14 +620,16 @@ img {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  background: #e5e5e5;
 }
 
 body {
+  width: 1600px;
+  margin: 0 auto;
   font-family: "Roboto", Verdana, serif;
   font-size: 1.6rem;
   font-style: normal;
-  width: 1600px;
-  background: #e5e5e5;
+  background: white;
 }
 
 .container {
