@@ -1,18 +1,19 @@
 // normalize
-@import "assets/styles/normalaize.scss";
+@import "./normalaize.scss";
 // fonts
-@import "assets/styles/fonts.scss";
+@import "./fonts.scss";
 // constants
-@import "assets/styles/constants.scss";
+@import "./constants.scss";
 // components
-@import "assets/styles/menu.scss";
-@import "assets/styles/logo.scss";
-@import "assets/styles/buttons.scss";
+@import "./menu.scss";
+@import "./logo.scss";
+@import "./buttons.scss";
 // sections
-@import "assets/styles/header.scss";
-@import "assets/styles/favorite-animal-section.scss";
-@import "assets/styles/backstage-section.scss";
-@import "assets/styles/pets-section.scss";
+@import "./layouts/header.scss";
+@import "./layouts/favorite-animal-section.scss";
+@import "./layouts/backstage-section.scss";
+@import "./layouts/pets-section.scss";
+@import "./layouts/pick-feed-section.scss";
 
 article,
 aside,
@@ -56,15 +57,27 @@ html {
 body {
   width: 1600px;
   margin: 0 auto;
-  font-family: $font-family-main;
+  font-family: "Roboto", Verdana, serif;
   font-size: 1.6rem;
   font-style: normal;
   background: $color-white;
   // overflow: hidden;
 }
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+}
+.font_24 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
 .container {
   margin: 0 auto;
-  max-width: $content-width;
+  max-width: 1200px; // 1600 - 220*2
   padding: 0 20px;
 }
 .visually-hidden {
@@ -85,4 +98,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.centered_text {
+  text-align: center;
 }

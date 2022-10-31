@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/main.css">
   <title>online-zoo</title>
 </head>
 
@@ -13,7 +13,7 @@
   <header class="header">
     <div class="container flex">
       <div class="flex">
-        <a class="logo" href="#" target="_blank" title="Home">
+        <a class="logo" href="./index.html" target="_blank" title="Home">
           <img src="assets/images/logo_footer.png" alt="logo">
           <h1 class="visually-hidden">PetStory Online</h1>
         </a>
@@ -29,7 +29,7 @@
               <a href="#video">Zoos</a>
             </li>
             <li class="menu-item">
-              <a href="#video">Donate</a>
+              <a href="./pages/donate/index.html" target="_blank">Donate</a>
             </li>
             <li class="menu-item">
               <a href="#gallery">Contact us</a>
@@ -61,7 +61,7 @@
           <div class="backstage-section__text-content">
             <h2>The Backstage of the Wilderness World.</h2>
             <p>The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
-            <h3>How it works</h3>
+            <h3 class="font_24">How it works</h3>
             <p>The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We
               are currently
               working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in
@@ -161,9 +161,52 @@
                 fill="white" stroke="white" stroke-width="0.3" />
             </svg></button>
         </div>
-        <button class="button">choose your favorite</button>
+        <div class="button-container">
+          <button class="button">choose your favorite</button>
+        </div>
       </div>
 
+    </section>
+    <section class="pick-feed-section">
+      <div class="container">
+        <div class="pick-feed-section__content">
+          <h2 class="centered_text">Pick and feed a friend</h2>
+          <p class="pick-feed-section__font1 font_24">We know the animals bring you joy, and in these extraordinary
+            times, we’re
+            glad.</p>
+          <p class="pick-feed-section__font2">During a time when the COVID-19 epidemic is touching all of our lives,
+            we’re proud and glad that people
+            around the world
+            find joy in PetStory.</p>
+          <p class="pick-feed-section__font3">Even though the zoo has reopened, we need you now more than ever to help
+            us deal with these problems.
+            Please consider <br>a gift to our <a href="./pages/donate/index.html" class="link">Emergency Support
+              Fund</a>.</p>
+
+          <h3 class="centered_text">How it works</h3>
+
+          <div class="pick-feed-cards">
+            <div class="one">
+              <div class="feed-card"></div>
+              <p>Pay with card</p>
+            </div>
+            <div class="two">
+              <div class="feed-card"></div>
+              <p>Payment goes to the zoo</p>
+            </div>
+            <div class="three">
+              <div class="feed-card"></div>
+              <p>Your favorite animal gets delicious dish</p>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="button" onclick="location.href='./pages/donate/index.html'" type="button">Feed a friend
+              now</button>
+          </div>
+
+        </div>
+
+      </div>
     </section>
   </main>
   <footer></footer>
