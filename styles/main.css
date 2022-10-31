@@ -625,6 +625,11 @@ img {
 .card:hover .card-ifo {
   opacity: 1;
 }
+.card:hover .card-text {
+  transform: translate(0, -60px) scale(1.1);
+  color: white;
+  transition: transform 0.5s, color 0.5s;
+}
 
 .card-img {
   display: inline-block; /* Строчно-блочный элемент */
@@ -655,6 +660,7 @@ img {
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
+  transition: transform 1000ms, color 1000ms;
 }
 .card-text h3 {
   font-family: "Roboto";
