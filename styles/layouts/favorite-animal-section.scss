@@ -1,7 +1,8 @@
 .favorite-animal-section {
+  width: 100%;
   height: 700px;
-  background: url("../assets/images/giant_panda.png") 50% no-repeat;
-  background-color: $color-black;
+  background: url("../assets/images/giant_panda1.jpg") bottom no-repeat;
+  background-color: $color-black-blue;
   & .container {
     display: flex;
     justify-content: end;
