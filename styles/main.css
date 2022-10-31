@@ -794,7 +794,7 @@ img {
 
 .testimonials-section {
   background: url("../assets/images/leav_foto.png") no-repeat bottom -135px right;
-  padding: 140px 0 179px 0;
+  padding: 140px 0 180px 0;
 }
 .testimonials-section h2 {
   font-family: "Roboto";
@@ -807,7 +807,7 @@ img {
 }
 .testimonials-section .testimonials-cards {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 16px;
 }
 .testimonials-section .button-container {
   justify-content: flex-start;
@@ -897,6 +897,40 @@ img {
   color: #767474;
   margin-top: 10px;
   overflow: hidden;
+}
+
+.line-scroll {
+  margin: 21px 0 15px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 600px;
+  height: 8px;
+  background: #f5f7f6;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border: solid 0.5px transparent;
+  background: linear-gradient(#f1f3f2, #f1f3f2) padding-box, linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%) border-box;
+  border-radius: 5px;
+}
+.line-scroll:hover {
+  opacity: 1;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials-cards ::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 115px;
+  height: 6px;
+  border-radius: 5px;
+  background: #fe9013;
+  cursor: pointer;
 }
 
 .footer {
@@ -1012,6 +1046,7 @@ form label {
   width: 228px;
   height: 42px;
   border: solid 0.7px #fe9013;
+  border-radius: 2px;
   margin-top: 13px;
   color: #bdbdbd;
   background-color: #111115;
