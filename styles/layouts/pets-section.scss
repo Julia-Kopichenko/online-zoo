@@ -50,6 +50,11 @@
     & .card-ifo {
       opacity: 1;
     }
+    .card-text {
+      transform: translate(0, -60px) scale(1.1);
+      color: $color-white;
+      transition: transform 0.5s, color 0.5s;
+    }
   }
 }
 .card-img {
@@ -68,12 +73,6 @@
 .card-ifo {
   width: 100%;
   padding: 8px 12px 8px 16px;
-  // !
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
-  // opacity: 0;
-  // transition: opacity 0.75s;
 }
 .card-text {
   display: flex;
@@ -81,6 +80,7 @@
   align-items: flex-start;
   justify-content: space-between;
   @include font_15;
+  transition: transform 1000ms, color 1000ms;
   & h3 {
     @include font_16_bold;
     text-transform: uppercase;
