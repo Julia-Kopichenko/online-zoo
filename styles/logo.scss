@@ -1,6 +1,22 @@
 .logo {
-  max-width: 82px;
-  & img {
-    vertical-align: bottom;
+  & .logo-svg {
+    width: 82px;
+    padding-bottom: 4px;
+    background-image: url("../assets/svg/bamboo.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 6px left 10px;
+    text-align: center;
+    border: 1.18841px solid #ffffff;
+    @include logo_text;
+    & .logo-text {
+      color: $color-white;
+      transition: all 0.5s ease;
+      &:hover {
+        color: transparent;
+        -webkit-background-clip: text;
+        // background-clip: text;
+        background-image: $color-orange;
+      }
+    }
   }
 }

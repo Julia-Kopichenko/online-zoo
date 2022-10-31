@@ -13,10 +13,10 @@
   <header class="header">
     <div class="container flex">
       <div class="flex">
-        <a class="logo" href="./index.html" target="_blank" title="Home">
-          <img src="assets/images/logo_footer.png" alt="logo">
-          <h1 class="visually-hidden">PetStory Online</h1>
-        </a>
+        <div class="logo">
+          <h1 class="logo-svg"><a href="./index.html" class="logo-text" target="_blank" title="Home">PetStory
+              online</a></h1>
+        </div>
         <nav class="menu">
           <ul class="flex">
             <li class="menu-item">
@@ -48,7 +48,7 @@
       <div class="container">
         <div class="favorite-animal-section__content">
           <h2>Watch your <span>favorite</span> animal online</h2>
-          <button class="button">watсh online</button>
+          <button class="button button-br-big">watсh online</button>
         </div>
       </div>
     </section>
@@ -162,7 +162,7 @@
             </svg></button>
         </div>
         <div class="button-container">
-          <button class="button">choose your favorite</button>
+          <button class="button button-br-big">choose your favorite</button>
         </div>
       </div>
     </section>
@@ -197,7 +197,8 @@
             </div>
           </div>
           <div class="button-container">
-            <button class="button" onclick="location.href='./pages/donate/index.html'" type="button">Feed a friend
+            <button class="button button-br-big" onclick="location.href='./pages/donate/index.html'" type="button">Feed
+              a friend
               now</button>
           </div>
         </div>
@@ -206,7 +207,6 @@
     </section>
     <section class="testimonials-section">
       <div class="container">
-        <!-- <div class="testimonials-section-container"> -->
         <h2 class="centered_text">Testimonials</h2>
         <div class="testimonials-cards">
           <ul class="testimonials-cards-container flex">
@@ -346,13 +346,64 @@
 
         </div>
         <div class="button-container">
-          <button class="button">leave feedback</button>
+          <button class="button button-br-small">leave feedback</button>
         </div>
-
-        <!-- </div> -->
     </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container flex">
+        <div class="left-block">
+          <div class="logo">
+            <h2 class="logo-svg"><a href="./index.html" class="logo-text" target="_blank" title="Home">PetStory
+                online</a></h2>
+          </div>
+          <button class="button button-br-small" onclick="location.href='./pages/donate/index.html'"
+            type="button">donate
+            for
+            volunteers</button>
+          <div class="bottom-block">
+            <div class="social-nav">
+              <a class="facebook" href="https://www.facebook.com/" target="_blank"><span></span></a>
+              <a class="twitter" href="https://twitter.com/" target="_blank"><span></span></a>
+              <a class="instagram" href="https://www.instagram.com/" target="_blank"><span></span></a>
+              <a class="youtube" href="https://www.youtube.com/" target="_blank"><span></span></a>
+            </div>
+            <nav class="menu">
+              <ul class="flex">
+                <li class="menu-item">
+                  <a href="#visiting">About</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#explore">Map</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#video">Zoos</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#gallery">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="right-block">
+          <form action="#">
+            <label for="email" class="email">Subscribe to our news</label>
+            <div class="email-submit">
+              <input type="email" id="email" size="30" placeholder="Enter your email" required>
+              <input type="submit" class="submit" value="Submit">
+            </div>
+          </form>
+          <div class="designed-by-text">
+            <p>Designed by Alisa Samborskaya</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="#"></script>
 </body>
 

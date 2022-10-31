@@ -18,7 +18,13 @@
   src: url("../assets/fonts/Roboto-Bold.ttf");
   font-weight: 700;
 }
-
+@mixin logo_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 120%;
+}
 @mixin font_48 {
   font-family: "Roboto";
   font-style: normal;

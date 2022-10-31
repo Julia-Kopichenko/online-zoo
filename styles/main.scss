@@ -15,6 +15,7 @@
 @import "./layouts/pets-section.scss";
 @import "./layouts/pick-feed-section.scss";
 @import "./layouts/testimonials-section.scss";
+@import "./layouts/footer.scss";
 
 html {
   font-size: 10px;
@@ -35,18 +36,7 @@ body {
   max-width: 1200px; // 1600 - 220*2
   padding: 0 20px;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 // FLEX
 .flex {
   display: flex;
