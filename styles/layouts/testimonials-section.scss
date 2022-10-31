@@ -1,7 +1,7 @@
 .testimonials-section {
-  padding: 140px 0;
-  background: url("../assets/images/leav_foto.png") no-repeat bottom right;
-  // margin: 140px auto 179px;
+  // padding-top: 140px;
+  background: url("../assets/images/leav_foto.png") no-repeat bottom -135px right;
+  padding: 140px 0 179px 0;
   & h2 {
     @include font_36;
     color: $color-black-blue;
@@ -13,10 +13,7 @@
   }
   & .button-container {
     justify-content: flex-start;
-    margin-bottom: 174px;
-  }
-  & .button {
-    border-radius: 5px;
+    // margin-bottom: 174px;
   }
 }
 .testimonials-cards-container {

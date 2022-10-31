@@ -5,7 +5,6 @@
 }
 .button {
   width: 298px;
-  border-radius: 25px;
   border: none;
   cursor: pointer;
   font-weight: 500;
@@ -24,6 +23,12 @@
   }
   &:disabled {
     background: $color-gray;
+  }
+  &.button-br-big {
+    border-radius: 25px;
+  }
+  &.button-br-small {
+    border-radius: 5px;
   }
 }
 
