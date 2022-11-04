@@ -379,6 +379,11 @@ img {
   color: white;
   transition: all 0.5s ease;
 }
+.menu-item a.active-link {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
 .menu-item a:hover, .menu-item a:active {
   color: transparent;
   -webkit-background-clip: text;
