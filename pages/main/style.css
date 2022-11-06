@@ -347,24 +347,60 @@ img {
 
 @font-face {
   font-family: Roboto;
-  src: url("../assets/fonts/Roboto-Regular.ttf");
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
   font-weight: 100;
 }
 @font-face {
   font-family: Roboto;
-  src: url("../assets/fonts/Roboto-Light.ttf");
+  src: url("../../assets/fonts/Roboto-Light.ttf");
   font-weight: 300;
 }
 @font-face {
   font-family: Roboto;
-  src: url("../assets/fonts/Roboto-Medium.ttf");
+  src: url("../../assets/fonts/Roboto-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: Roboto;
-  src: url("../assets/fonts/Roboto-Bold.ttf");
+  src: url("../../assets/fonts/Roboto-Bold.ttf");
   font-weight: 700;
 }
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Verdana, serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  min-width: 1240px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.centered-text {
+  text-align: center;
+}
+
 .menu .menu__item:not(:last-of-type) {
   margin-right: 58px;
 }
@@ -390,7 +426,7 @@ img {
 .logo .logo__img {
   width: 82px;
   padding: 2px 0;
-  background-image: url("../assets/svg/bamboo.svg");
+  background-image: url("../../assets/svg/bamboo.svg");
   background-repeat: no-repeat;
   background-position: bottom 6px left 10px;
   text-align: center;
@@ -418,7 +454,7 @@ img {
 }
 
 .button {
-  width: 298px;
+  min-width: 298px;
   border: none;
   cursor: pointer;
   font-weight: 500;
@@ -426,7 +462,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  padding: 16px 0;
+  padding: 16px;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   transition: all 1s ease;
 }
@@ -447,8 +483,8 @@ img {
 }
 
 .button-ellipse {
-  width: 62px;
-  height: 62px;
+  min-width: 62px;
+  min-height: 62px;
   text-align: center;
   color: white;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
@@ -618,28 +654,28 @@ img {
 .facebook {
   width: 111px;
   height: 26px;
-  background-image: url("../assets/svg/facebook.svg");
+  background-image: url("../../assets/svg/facebook.svg");
   background-repeat: no-repeat;
 }
 
 .twitter {
   width: 111px;
   height: 26px;
-  background-image: url("../assets/svg/twitter.svg");
+  background-image: url("../../assets/svg/twitter.svg");
   background-repeat: no-repeat;
 }
 
 .instagram {
   width: 111px;
   height: 26px;
-  background-image: url("../assets/svg/instagram.svg");
+  background-image: url("../../assets/svg/instagram.svg");
   background-repeat: no-repeat;
 }
 
 .youtube {
   width: 111px;
   height: 26px;
-  background-image: url("../assets/svg/youtube.svg");
+  background-image: url("../../assets/svg/youtube.svg");
   background-repeat: no-repeat;
 }
 
@@ -647,7 +683,7 @@ img {
   background-color: black;
 }
 
-.header__row {
+.header__container {
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -667,7 +703,7 @@ img {
 
 .favorite-animal-section {
   padding: 86px 0 100px;
-  background: url("../assets/images/giant_panda1.jpg") bottom no-repeat;
+  background: url("../../assets/images/giant_panda1.jpg") bottom no-repeat;
   background-size: 100%;
 }
 .favorite-animal-section .container {
@@ -708,7 +744,7 @@ img {
 }
 
 .backstage-section {
-  background: url("../assets/images/flower_foto1.png") no-repeat top 12px right -93px;
+  background: url("../../assets/images/flower_foto1.png") no-repeat top 12px right -93px;
 }
 .backstage-section .backstage-section__content {
   padding: 140px 0 176px 0;
@@ -759,7 +795,7 @@ img {
 }
 
 .pets-section {
-  background: url("../assets/images/flower_foto2.png") no-repeat bottom left, url("../assets/images/flower_foto3.png") no-repeat bottom right;
+  background: url("../../assets/images/flower_foto2.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom right;
 }
 .pets-section .carousel {
   margin-bottom: 80px;
@@ -865,10 +901,10 @@ img {
   width: 168px;
 }
 .pick-feed-cards .one .feed-card {
-  background-image: url("../assets/svg/pay.svg");
+  background-image: url("../../assets/svg/pay.svg");
 }
 .pick-feed-cards .one .feed-card::after {
-  content: url("../assets/svg/vector.svg");
+  content: url("../../assets/svg/vector.svg");
   position: relative;
   left: 196px;
   top: 60px;
@@ -877,10 +913,10 @@ img {
   width: 168px;
 }
 .pick-feed-cards .two .feed-card {
-  background-image: url("../assets/svg/zoo.svg");
+  background-image: url("../../assets/svg/zoo.svg");
 }
 .pick-feed-cards .two .feed-card::after {
-  content: url("../assets/svg/vector.svg");
+  content: url("../../assets/svg/vector.svg");
   position: relative;
   left: 196px;
   top: 56px;
@@ -889,7 +925,7 @@ img {
   width: 168px;
 }
 .pick-feed-cards .three .feed-card {
-  background-image: url("../assets/svg/monkey.svg");
+  background-image: url("../../assets/svg/monkey.svg");
 }
 .pick-feed-cards p {
   line-height: 140%;
@@ -898,7 +934,7 @@ img {
 }
 
 .testimonials-section {
-  background: url("../assets/images/leav_foto.png") no-repeat bottom -135px right;
+  background: url("../../assets/images/leav_foto.png") no-repeat bottom -135px right;
   padding: 140px 0 180px 0;
 }
 .testimonials-section h2 {
@@ -942,19 +978,19 @@ img {
 }
 
 .one .user-photo {
-  background-image: url("../assets/svg/user_icon.svg");
+  background-image: url("../../assets/svg/user_icon.svg");
 }
 
 .two .user-photo {
-  background-image: url("../assets/images/user_icon_2.png");
+  background-image: url("../../assets/images/user_icon_2.png");
 }
 
 .three .user-photo {
-  background-image: url("../assets/images/user_icon_3.png");
+  background-image: url("../../assets/images/user_icon_3.png");
 }
 
 .four .user-photo {
-  background-image: url("../assets/images/user_icon_4.png");
+  background-image: url("../../assets/images/user_icon_4.png");
 }
 
 .user-information {
@@ -1048,6 +1084,9 @@ img {
 .footer .container {
   height: 100%;
 }
+.footer .button-container {
+  justify-content: flex-start;
+}
 
 .footer__menu {
   width: 364px;
@@ -1095,40 +1134,4 @@ img {
   margin: 9px 0 0;
 }
 
-html {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Roboto", Verdana, serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  min-width: 1240px;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1240px;
-  padding: 0 40px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.centered-text {
-  text-align: center;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

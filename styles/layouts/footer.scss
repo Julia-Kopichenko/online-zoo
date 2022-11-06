@@ -7,6 +7,9 @@
   & .container {
     height: 100%;
   }
+  & .button-container {
+    justify-content: flex-start;
+  }
 }
 .footer__menu {
   width: 364px;

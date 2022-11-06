@@ -1,6 +1,6 @@
 .testimonials-section {
   // padding-top: 140px;
-  background: url("../assets/images/leav_foto.png") no-repeat bottom -135px right;
+  background: url("../../assets/images/leav_foto.png") no-repeat bottom -135px right;
   padding: 140px 0 180px 0;
   & h2 {
     @include font_36;
@@ -38,16 +38,16 @@
   height: 37px;
 }
 .one .user-photo {
-  background-image: url("../assets/svg/user_icon.svg");
+  background-image: url("../../assets/svg/user_icon.svg");
 }
 .two .user-photo {
-  background-image: url("../assets/images/user_icon_2.png");
+  background-image: url("../../assets/images/user_icon_2.png");
 }
 .three .user-photo {
-  background-image: url("../assets/images/user_icon_3.png");
+  background-image: url("../../assets/images/user_icon_3.png");
 }
 .four .user-photo {
-  background-image: url("../assets/images/user_icon_4.png");
+  background-image: url("../../assets/images/user_icon_4.png");
 }
 // user-information
 .user-information {

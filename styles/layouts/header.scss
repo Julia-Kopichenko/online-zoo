@@ -1,7 +1,7 @@
 .header {
   background-color: $color-black;
 }
-.header__row {
+.header__container {
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -16,4 +16,3 @@
 .header__logo {
   margin-right: 63px;
 }
-
