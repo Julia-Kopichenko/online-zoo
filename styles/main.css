@@ -365,32 +365,29 @@ img {
   src: url("../assets/fonts/Roboto-Bold.ttf");
   font-weight: 700;
 }
-.menu {
-  width: 472px;
-}
-.menu .menu-item:not(:last-of-type) {
+.menu .menu__item:not(:last-of-type) {
   margin-right: 58px;
 }
 
-.menu-item a {
+.menu__item a {
   display: block;
   font-weight: 500;
   line-height: 140%;
   color: white;
   transition: all 0.5s ease;
 }
-.menu-item a.active-link {
+.menu__item a.active-link {
   color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 }
-.menu-item a:hover, .menu-item a:active {
+.menu__item a:hover, .menu__item a:active {
   color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 }
 
-.logo .logo-svg {
+.logo .logo__img {
   width: 82px;
   padding: 2px 0;
   background-image: url("../assets/svg/bamboo.svg");
@@ -404,11 +401,11 @@ img {
   font-size: 19px;
   line-height: 120%;
 }
-.logo .logo-svg .logo-text {
+.logo .logo__img .logo__text {
   color: white;
   transition: all 0.5s ease;
 }
-.logo .logo-svg .logo-text:hover {
+.logo .logo__img .logo__text:hover {
   color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
@@ -442,18 +439,18 @@ img {
 .button:disabled {
   background: #767474;
 }
-.button.button-br-big {
+.button.button--primary {
   border-radius: 25px;
 }
-.button.button-br-small {
+.button.button--secondary {
   border-radius: 5px;
 }
 
 .button-ellipse {
-  color: white;
-  text-align: center;
   width: 62px;
   height: 62px;
+  text-align: center;
+  color: white;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   border-radius: 31px;
   border: none;
@@ -470,27 +467,212 @@ img {
   background: #767474;
 }
 
-.header {
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  max-width: 366px;
+  min-height: 426px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  overflow: hidden;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .card__img img {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+.card:hover .card__info-wrapper {
+  opacity: 1;
+}
+.card:hover .card__info {
+  transform: translate(0, -60px) scale(1.1);
+  color: white;
+  transition: transform 0.5s, color 0.5s;
+}
+
+.card__img {
+  display: inline-block; /* Строчно-блочный элемент */
+  overflow: hidden; /* Скрываем всё за контуром */
+  background: #000; /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+}
+.card__img img {
+  max-width: 100%;
+  width: 366px;
+  height: 366px;
+  opacity: 1;
+  transition: opacity 0.2s linear, transform 0.2s linear; /* Плавное изменение прозрачности и увеличения */
+  display: block; /* Убираем небольшой отступ снизу */
+}
+
+.card__info-wrapper {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 80px;
+  padding: 8px 12px 8px 16px;
+}
+
+.card__info {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  transition: transform 0.1s, color 0.1s;
+}
+.card__info h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel .button-ellipse--prev {
+  position: absolute;
+  left: -82px;
+  top: 405px;
+}
+.carousel .button-ellipse--next {
+  position: absolute;
+  right: -82px;
+  top: 405px;
+}
+
+.carousel__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 366px);
+  grid-template-rows: repeat(2, 426px);
+  grid-column-gap: 29px;
+  grid-row-gap: 20px;
+}
+
+.subscribe-form .flex {
+  margin-top: 13px;
+}
+.subscribe-form .subscribe-form__input {
+  margin-right: 10px;
+}
+
+.subscribe-form__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.subscribe-form__input {
+  width: 228px;
+  height: 42px;
+  border: solid 0.7px #fe9013;
+  border-radius: 2px;
+  padding-left: 10px;
+  color: #bdbdbd;
+  background-color: #111115;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.subscribe-form__input:focus:required:invalid, .subscribe-form__input:focus:required:invalid ~ .submit {
+  border: 1px solid #d31414;
+  color: #d31414;
+}
+.subscribe-form__input:focus:required, .subscribe-form__input:focus:required ~ .subscribe-form__button {
+  border: 1px solid #4b9200;
+  color: #4b9200;
+}
+
+.subscribe-form__button {
+  width: 129px;
+  height: 42px;
+  color: black;
+  border: 1px solid #333b41;
+  background: #f1f3f2;
+  border-radius: 5px;
+}
+
+.social-nav {
+  display: flex;
+  flex-direction: column;
+}
+.social-nav a {
+  margin-top: 10px;
+  transition: transform 0.5s ease;
+}
+.social-nav a:hover {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(97%) saturate(1154%) hue-rotate(350deg) brightness(102%) contrast(99%);
+}
+.social-nav a:active {
+  filter: invert(33%) sepia(20%) saturate(1267%) hue-rotate(61deg) brightness(101%) contrast(101%);
+}
+
+.facebook {
+  width: 111px;
+  height: 26px;
+  background-image: url("../assets/svg/facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  width: 111px;
+  height: 26px;
+  background-image: url("../assets/svg/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.instagram {
+  width: 111px;
+  height: 26px;
+  background-image: url("../assets/svg/instagram.svg");
+  background-repeat: no-repeat;
+}
+
+.youtube {
+  width: 111px;
+  height: 26px;
+  background-image: url("../assets/svg/youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.header {
   background-color: black;
 }
-.header .logo, .header .menu {
+
+.header__row {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu,
+.header__logo {
   margin-right: 63px;
 }
 
 .favorite-animal-section {
-  width: 100%;
-  height: 700px;
+  padding: 86px 0 100px;
   background: url("../assets/images/giant_panda1.jpg") bottom no-repeat;
-  background-color: #333b41;
+  background-size: 100%;
 }
 .favorite-animal-section .container {
   display: flex;
   justify-content: end;
-}
-.favorite-animal-section .favorite-animal-section__content {
-  padding-top: 86px;
 }
 
 .favorite-animal-section__content {
@@ -504,11 +686,11 @@ img {
 .favorite-animal-section__content::before {
   content: "";
   position: absolute;
-  top: 12px;
-  right: 110px;
-  z-index: 1;
   width: 465px;
   height: 465px;
+  bottom: 123px;
+  right: 110px;
+  z-index: 1;
   border-radius: 50%;
   background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
 }
@@ -578,102 +760,12 @@ img {
 
 .pets-section {
   background: url("../assets/images/flower_foto2.png") no-repeat bottom left, url("../assets/images/flower_foto3.png") no-repeat bottom right;
-  text-align: center;
 }
 .pets-section .carousel {
   margin-bottom: 80px;
 }
 .pets-section .button {
   margin-bottom: 100px;
-}
-
-.carousel {
-  position: relative;
-}
-.carousel .prev {
-  position: absolute;
-  left: -82px;
-  top: 405px;
-}
-.carousel .next {
-  position: absolute;
-  right: -82px;
-  top: 405px;
-}
-
-.pets-cards-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 366px);
-  grid-template-rows: repeat(2, 426px);
-  grid-column-gap: 29px;
-  grid-row-gap: 20px;
-}
-
-.card {
-  max-width: 366px;
-  min-height: 426px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: column;
-  border: 1px solid orange;
-  overflow: hidden;
-}
-.card:hover {
-  cursor: pointer;
-}
-.card:hover img {
-  opacity: 0.7; /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
-  transform: scale(1.1); /* Увеличиваем масштаб */
-}
-.card:hover .card-ifo {
-  opacity: 1;
-}
-.card:hover .card-text {
-  transform: translate(0, -60px) scale(1.1);
-  color: white;
-  transition: transform 0.5s, color 0.5s;
-}
-
-.card-img {
-  display: inline-block; /* Строчно-блочный элемент */
-  overflow: hidden; /* Скрываем всё за контуром */
-  background: #000; /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
-}
-.card-img img {
-  max-width: 100%;
-  width: 366px;
-  height: 366px;
-  opacity: 1;
-  transition: opacity 0.2s linear, transform 0.2s linear; /* Плавное изменение прозрачности и увеличения */
-  display: block; /* Убираем небольшой отступ снизу */
-}
-
-.card-ifo {
-  width: 100%;
-  padding: 8px 12px 8px 16px;
-}
-
-.card-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 120%;
-  transition: transform 1000ms, color 1000ms;
-}
-.card-text h3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
-  text-transform: uppercase;
 }
 
 .pick-feed-section {
@@ -956,7 +1048,8 @@ img {
 .footer .container {
   height: 100%;
 }
-.footer .menu {
+
+.footer__menu {
   width: 364px;
 }
 
@@ -989,94 +1082,6 @@ img {
   align-items: flex-end;
 }
 
-.social-nav {
-  display: flex;
-  flex-direction: column;
-}
-.social-nav a {
-  margin-top: 10px;
-  transition: transform 0.5s ease;
-}
-.social-nav a:hover {
-  filter: brightness(0) saturate(100%) invert(55%) sepia(97%) saturate(1154%) hue-rotate(350deg) brightness(102%) contrast(99%);
-}
-.social-nav a:active {
-  filter: invert(33%) sepia(20%) saturate(1267%) hue-rotate(61deg) brightness(101%) contrast(101%);
-}
-
-.facebook {
-  width: 111px;
-  height: 26px;
-  background-image: url("../assets/svg/facebook.svg");
-  background-repeat: no-repeat;
-}
-
-.twitter {
-  width: 111px;
-  height: 26px;
-  background-image: url("../assets/svg/twitter.svg");
-  background-repeat: no-repeat;
-}
-
-.instagram {
-  width: 111px;
-  height: 26px;
-  background-image: url("../assets/svg/instagram.svg");
-  background-repeat: no-repeat;
-}
-
-.youtube {
-  width: 111px;
-  height: 26px;
-  background-image: url("../assets/svg/youtube.svg");
-  background-repeat: no-repeat;
-}
-
-form label {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 120%;
-}
-
-.email-submit {
-  display: flex;
-  align-items: baseline;
-}
-
-.submit {
-  width: 129px;
-  height: 42px;
-  color: black;
-  border: 1px solid #333b41;
-  background: #f1f3f2;
-  border-radius: 5px;
-  margin-left: 10px;
-}
-
-#email {
-  width: 228px;
-  height: 42px;
-  border: solid 0.7px #fe9013;
-  border-radius: 2px;
-  margin-top: 13px;
-  color: #bdbdbd;
-  background-color: #111115;
-  padding-left: 10px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-}
-#email:focus:required:invalid, #email:focus:required:invalid ~ .submit {
-  border: 1px solid #d31414;
-  color: #d31414;
-}
-#email:focus:required, #email:focus:required ~ .submit {
-  border: 1px solid #4b9200;
-  color: #4b9200;
-}
-
 .designed-by-text {
   display: flex;
   flex-direction: column;
@@ -1093,23 +1098,26 @@ form label {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  background: #e5e5e5;
 }
 
 body {
-  width: 1600px;
-  margin: 0 auto;
   font-family: "Roboto", Verdana, serif;
   font-size: 1.6rem;
   font-style: normal;
-  background: white;
+  min-width: 1240px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-  height: 100%;
-  padding: 0 20px;
+  max-width: 1240px;
+  padding: 0 40px;
 }
 
 .flex {
@@ -1119,7 +1127,7 @@ body {
   flex-wrap: wrap;
 }
 
-.centered_text {
+.centered-text {
   text-align: center;
 }
 

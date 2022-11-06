@@ -1,13 +1,20 @@
-// normalize
-@import "./normalaize.scss";
-// fonts
-@import "./fonts.scss";
-// constants
-@import "./constants.scss";
+// base
+@import "./base/normalaize.scss";
+@import "./base/fonts.scss";
+
+// helpers
+@import "./helpers/constants.scss";
+@import "./helpers/mixins.scss";
+
 // components
-@import "./menu.scss";
-@import "./logo.scss";
-@import "./buttons.scss";
+@import "./components/menu.scss";
+@import "./components/logo.scss";
+@import "./components/buttons.scss";
+@import "./components/animal-card.scss";
+@import "./components/carousel.scss";
+@import "./components/subscribe-form.scss";
+@import "./components/sotials.scss";
+
 // sections
 @import "./layouts/header.scss";
 @import "./layouts/favorite-animal-section.scss";
@@ -20,22 +27,25 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  background: #e5e5e5;
 }
 body {
-  width: 1600px;
-  margin: 0 auto;
   font-family: "Roboto", Verdana, serif;
   font-size: 1.6rem;
   font-style: normal;
-  background: $color-white;
-  // overflow: hidden;
+  // fixed layout
+  min-width: 1240px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
 }
 .container {
   margin: 0 auto;
-  max-width: 1200px; // 1600 - 220*2
-  height: 100%;
-  padding: 0 20px;
+  //! for fixed layout
+  max-width: 1240px;
+  padding: 0 40px;
 }
 
 // FLEX
@@ -45,6 +55,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.centered_text {
+.centered-text {
   text-align: center;
 }

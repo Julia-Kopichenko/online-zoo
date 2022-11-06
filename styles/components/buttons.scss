@@ -24,19 +24,19 @@
   &:disabled {
     background: $color-gray;
   }
-  &.button-br-big {
+  &.button--primary {
     border-radius: 25px;
   }
-  &.button-br-small {
+  &.button--secondary {
     border-radius: 5px;
   }
 }
 
 .button-ellipse {
-  color: $color-white;
-  text-align: center;
   width: 62px;
   height: 62px;
+  text-align: center;
+  color: $color-white;
   background: $color-orange;
   border-radius: 31px;
   border: none;

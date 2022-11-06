@@ -1,14 +1,10 @@
 .favorite-animal-section {
-  width: 100%;
-  height: 700px;
+  padding: 86px 0 100px;
   background: url("../assets/images/giant_panda1.jpg") bottom no-repeat;
-  background-color: $color-black-blue;
+  background-size: 100%;
   & .container {
     display: flex;
     justify-content: end;
-  }
-  & .favorite-animal-section__content {
-    padding-top: 86px;
   }
 }
 .favorite-animal-section__content {
@@ -21,11 +17,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 12px;
-    right: 110px;
-    z-index: 1;
     width: 465px;
     height: 465px;
+    bottom: 123px;
+    right: 110px;
+    z-index: 1;
     border-radius: 50%;
     background: $color-orange;
   }
