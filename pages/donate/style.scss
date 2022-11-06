@@ -10,9 +10,14 @@
 // components
 @import "../../styles/components/menu.scss";
 @import "../../styles/components/logo.scss";
+@import "../../styles/components/buttons.scss";
+@import "../../styles/components/subscribe-form.scss";
+@import "../../styles/components/socials.scss";
 
 // sections
 @import "../../styles/layouts/header.scss";
+@import "../../styles/layouts/pick-feed-section_donate-page.scss";
+@import "../../styles/layouts/footer.scss";
 
 .top-section {
   min-height: 390px;
