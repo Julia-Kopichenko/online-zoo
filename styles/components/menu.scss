@@ -1,12 +1,11 @@
 .menu {
-  width: 472px;
-  & .menu-item {
+  & .menu__item {
     &:not(:last-of-type) {
       margin-right: 58px;
     }
   }
 }
-.menu-item {
+.menu__item {
   & a {
     display: block;
     font-weight: 500;
@@ -16,14 +15,12 @@
     &.active-link {
       color: transparent;
       -webkit-background-clip: text;
-      // background-clip: text;
       background-image: $color-orange;
     }
     &:hover,
     &:active {
       color: transparent;
       -webkit-background-clip: text;
-      // background-clip: text;
       background-image: $color-orange;
     }
   }

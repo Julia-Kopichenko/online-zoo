@@ -1,88 +1,10 @@
 .pets-section {
-  background: url("../assets/images/flower_foto2.png") no-repeat bottom left,
-    url("../assets/images/flower_foto3.png") no-repeat bottom right;
-  text-align: center;
+  background: url("../../assets/images/flower_foto2.png") no-repeat bottom left,
+    url("../../assets/images/flower_foto3.png") no-repeat bottom right;
   & .carousel {
     margin-bottom: 80px;
   }
   & .button {
     margin-bottom: 100px;
-  }
-}
-
-.carousel {
-  position: relative;
-  & .prev {
-    position: absolute;
-    left: -82px;
-    top: 405px;
-  }
-  & .next {
-    position: absolute;
-    right: -82px;
-    top: 405px;
-  }
-}
-.pets-cards-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 366px);
-  grid-template-rows: repeat(2, 426px);
-  grid-column-gap: 29px;
-  grid-row-gap: 20px;
-}
-
-.card {
-  max-width: 366px;
-  min-height: 426px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: column;
-  border: 1px solid orange;
-  overflow: hidden;
-  &:hover {
-    cursor: pointer;
-    & img {
-      opacity: 0.7; /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
-      transform: scale(1.1); /* Увеличиваем масштаб */
-    }
-    & .card-ifo {
-      opacity: 1;
-    }
-    .card-text {
-      transform: translate(0, -60px) scale(1.1);
-      color: $color-white;
-      transition: transform 0.5s, color 0.5s;
-    }
-  }
-}
-.card-img {
-  display: inline-block; /* Строчно-блочный элемент */
-  overflow: hidden; /* Скрываем всё за контуром */
-  background: #000; /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
-  & img {
-    max-width: 100%;
-    width: 366px;
-    height: 366px;
-    opacity: 1;
-    transition: opacity 0.2s linear, transform 0.2s linear; /* Плавное изменение прозрачности и увеличения */
-    display: block; /* Убираем небольшой отступ снизу */
-  }
-}
-.card-ifo {
-  width: 100%;
-  padding: 8px 12px 8px 16px;
-}
-.card-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  @include font_15;
-  transition: transform 1000ms, color 1000ms;
-  & h3 {
-    @include font_16_bold;
-    text-transform: uppercase;
   }
 }

@@ -4,7 +4,7 @@
   align-items: center;
 }
 .button {
-  width: 298px;
+  min-width: 298px;
   border: none;
   cursor: pointer;
   font-weight: 500;
@@ -12,7 +12,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-white;
-  padding: 16px 0;
+  padding: 16px;
   background: $color-orange;
   transition: all 1s ease;
   &:hover {
@@ -24,19 +24,19 @@
   &:disabled {
     background: $color-gray;
   }
-  &.button-br-big {
+  &.button--primary {
     border-radius: 25px;
   }
-  &.button-br-small {
+  &.button--secondary {
     border-radius: 5px;
   }
 }
 
 .button-ellipse {
-  color: $color-white;
+  min-width: 62px;
+  min-height: 62px;
   text-align: center;
-  width: 62px;
-  height: 62px;
+  color: $color-white;
   background: $color-orange;
   border-radius: 31px;
   border: none;
