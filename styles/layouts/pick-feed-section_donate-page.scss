@@ -18,13 +18,22 @@
   color: $color-orange-light;
   margin-bottom: 60px;
 }
-.pick-feed-section__content {
+
+.donate {
   border-radius: 20px;
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   padding: 40px 92px 62px 92px;
   color: $color-black-blue;
+
+  & .diet-info {
+    margin: 0 9px 47px 0;
+  }
+  & .donate-form {
+    margin-bottom: 30px;
+  }
 }
+
 .donate__title {
   @include font_48;
   color: $color-orange-light;
@@ -32,6 +41,196 @@
 }
 .donate__subtitle {
   @include font_24;
-  // color: $color-orange-light;
-  margin-bottom: 107px;
+  margin-bottom: 60px;
+}
+
+// diet-info
+.diet-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diet-info__days {
+  & p:first-of-type {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 14px;
+  }
+  margin: 52px 11px 0 0;
+}
+.diet-info__icon-x {
+  background-image: url("../../assets/svg/x_icon.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  margin: 25px 64px 0 0;
+}
+
+// donate-form
+.donate-form {
+  & .donate-form__progress-bar {
+    margin-bottom: 50px;
+  }
+  & .donate-form__amount {
+    margin-left: 4px;
+    margin-bottom: 26px;
+  }
+  & .donate-form__options {
+    margin-right: 11px;
+  }
+}
+
+// progress-bar
+.progress-bar__title {
+  margin-left: 5px;
+  margin-bottom: 17px;
+}
+.progress-bar__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  margin-bottom: 13px;
+}
+.progress-bar__background-line {
+  width: 915px;
+  height: 2px;
+  background: #72828e;
+  z-index: 1;
+}
+fieldset {
+  border: 0 none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.progress-bar__input:checked,
+.progress-bar__input:not(:checked) {
+  display: none;
+}
+.progress-bar__label {
+  position: relative;
+  width: 65px;
+  display: inline-block;
+  @include font_26_bold;
+  color: $color-black-blue;
+}
+.progress-bar__input:not(:checked) + label,
+.progress-bar__input:checked + label {
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 28px;
+    bottom: 57px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $color-yellow;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    bottom: 43px;
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/svg/roller_icon.svg") no-repeat;
+  }
+}
+.progress-bar__input:not(:checked) + label:after {
+  opacity: 0;
+}
+.progress-bar__input:checked + label {
+  &::after {
+    position: absolute;
+    left: 13px;
+    bottom: 43px;
+    transition: all 250ms cubic-bezier(0.4, 0.25, 0.3, 1);
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/svg/roller_icon.svg") no-repeat;
+  }
+}
+.progress-bar__input:checked + label,
+.progress-bar__input:checked + label:hover,
+.progress-bar__input:not(:checked) + label:hover {
+  color: $color-orange-light;
+  &::before {
+    background-color: $color-orange-light;
+  }
+}
+
+// AMOUNT
+input[type="number"] {
+  margin: 0 auto;
+  width: 268px;
+  height: 52px;
+  border: 1px solid #929699;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 16px 9px;
+  background: url("../../assets/svg/dollar.svg") center right 10px no-repeat;
+  &:focus {
+    outline: 1px solid $color-green;
+    color: $color-green;
+    background: url("../../assets/svg/greenDollar.svg") center right 10px no-repeat;
+  }
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+// OPTIONS
+.donate-form__options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & div:not(:last-child) {
+    margin-right: 50px;
+  }
+  margin-bottom: 33px;
+}
+.options__input {
+  display: none;
+}
+.options__label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+.options__label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fe9013;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+/* Checked */
+.donate-form__options input[type="radio"]:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: $color-green;
+  border: 1px solid $color-green;
+  border-radius: 50%;
+  margin-right: 6px;
 }
