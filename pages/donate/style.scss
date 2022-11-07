@@ -162,6 +162,7 @@ fieldset {
     height: 10px;
     border-radius: 50%;
     background-color: $color-yellow;
+    z-index: 2;
   }
   &::after {
     content: "";
@@ -210,8 +211,16 @@ input[type="number"] {
   background: url("../../assets/svg/dollar.svg") center right 10px no-repeat;
   &:focus {
     outline: 1px solid $color-green;
+    border: 0;
     color: $color-green;
     background: url("../../assets/svg/greenDollar.svg") center right 10px no-repeat;
+  }
+  &:invalid,
+  &:invalid ~ .submit {
+    outline: 1px solid $color-red;
+    border: 0;
+    color: $color-red;
+    background: url("../../assets/svg/redDollar.svg") center right 10px no-repeat;
   }
 }
 input[type="number"] {

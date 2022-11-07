@@ -1123,6 +1123,7 @@ fieldset {
   height: 10px;
   border-radius: 50%;
   background-color: #ffee2e;
+  z-index: 2;
 }
 .progress-bar__input:not(:checked) + label::after,
 .progress-bar__input:checked + label::after {
@@ -1174,8 +1175,15 @@ input[type=number] {
 }
 input[type=number]:focus {
   outline: 1px solid #4b9200;
+  border: 0;
   color: #4b9200;
   background: url("../../assets/svg/greenDollar.svg") center right 10px no-repeat;
+}
+input[type=number]:invalid, input[type=number]:invalid ~ .submit {
+  outline: 1px solid #d31414;
+  border: 0;
+  color: #d31414;
+  background: url("../../assets/svg/redDollar.svg") center right 10px no-repeat;
 }
 
 input[type=number] {
