@@ -33,8 +33,8 @@
                 <li class="menu__item">
                   <a href="#video">Zoos</a>
                 </li>
-                <li class="menu__item">
-                  <a href="../donate/index.html">Donate</a>
+                <li class="menu__item ">
+                  <a class="active-link" href="../donate/index.html">Donate</a>
                 </li>
                 <li class="menu__item">
                   <a href="#gallery">Contact us</a>
@@ -51,8 +51,8 @@
       <!-- /container-->
     </header>
     <main>
-      <section class="top-section">
-      </section>
+      <div class="top-section">
+      </div>
 
       <section class="pick-feed-section">
         <div class="container">
@@ -70,17 +70,89 @@
             help us sustain our mission.</p>
           <p class="pick-feed-section__caption">Donation Information</p>
 
-          <div class="pick-feed-section__content">
+
+          <div class="donate">
             <h2 class="donate__title centered-text">Pick and feed a friend</h2>
             <p class="donate__subtitle">
               We know the animals bring you joy, and in these extraordinary times, we’re glad.
             </p>
 
-            <div class="button-container">
-              <button class="button button--primary" onclick="location.href='../donate/index.html'" type="button">Feed
-                a friend
-                now</button>
+            <div class="donate__diet-info diet-info">
+              <div class="diet-info__days">
+                <p>4</p>
+                <p>Panda diet for the day.</p>
+              </div>
+              <div class="diet-info__icon-x"></div>
+              <div class="diet-info__img">
+                <img src="../../assets/svg/panda_widget.svg" alt="panda">
+              </div>
             </div>
+
+            <form class="donate-form">
+              <div class="progress-bar donate-form__progress-bar">
+                <p class="progress-bar__title">Amount</p>
+                <div class="progress-bar__background">
+                  <div class="progress-bar__background-line"></div>
+                </div>
+                <fieldset>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="5000$" value="5000" />
+                    <label class="progress-bar__label" for="5000$">$5000</label>
+                  </div>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="2000$" value="2000" />
+                    <label class="progress-bar__label" for="5000$">$2000</label>
+                  </div>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="1000$" value="1000" checked />
+                    <label class="progress-bar__label" for="1000$">$1000</label>
+                  </div>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="500$" value="500" />
+                    <label class="progress-bar__label" for="500$">$500</label>
+                  </div>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="250$" value="250" />
+                    <label class="progress-bar__label" for="250$">$250</label>
+                  </div>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="100$" value="100" />
+                    <label class="progress-bar__label" for="100$">$100</label>
+                  </div>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="50$" value="50" />
+                    <label class="progress-bar__label" for="50$">$50</label>
+                  </div>
+                  <div>
+                    <input class="progress-bar__input" type="radio" name="radio" id="25$" value="25" />
+                    <label class="progress-bar__label" for="25$">$25</label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="amount donate-form__amount flex">
+                <input type="number" id="amount" placeholder="Another amount" min="0" max="9999"
+                  onkeypress="limitKeypress(event,this.value,4)" title="Should be a 4 characters limit">
+              </div>
+              <div class="options donate-form__options ">
+                <div>
+                  <input class="options__input" type="radio" name="radio" id="monthly" value="monthly" />
+                  <label class="options__label" for="monthly">
+                    Monthly</label>
+                </div>
+                <div>
+                  <input class="options__input" type="radio" name="radio" id="once" value="once" checked />
+                  <label class="options__label" for="once">
+                    Once</label>
+                </div>
+              </div>
+
+              <div class="button-container">
+                <button class="donate-form__button button button--primary" type="button">Feed
+                  a friend
+                  now</button>
+              </div>
+            </form>
+            <p class="centered-text">Share with your friends on social networks</p>
           </div>
         </div>
       </section>
@@ -99,14 +171,12 @@
                 type="button">donate for volunteers</button>
             </div>
             <div class="bottom-block">
-
               <div class="social-nav">
                 <a class="facebook" href="https://www.facebook.com/" target="_blank"><span></span></a>
                 <a class="twitter" href="https://twitter.com/" target="_blank"><span></span></a>
                 <a class="instagram" href="https://www.instagram.com/" target="_blank"><span></span></a>
                 <a class="youtube" href="https://www.youtube.com/" target="_blank"><span></span></a>
               </div>
-
               <nav class="footer__menu menu">
                 <ul class="menu__list flex">
                   <li class="menu__item">
@@ -125,7 +195,6 @@
               </nav>
             </div>
           </div>
-
           <div class="right-block">
             <form action="#" class="subscribe-form">
               <label for="email" class="subscribe-form__label">Subscribe to our news</label>
@@ -145,6 +214,7 @@
       <!-- /container-->
     </footer>
   </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>
