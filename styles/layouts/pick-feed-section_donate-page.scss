@@ -145,6 +145,7 @@ fieldset {
     width: 40px;
     height: 40px;
     background: url("../../assets/svg/roller_icon.svg") no-repeat;
+    z-index: 3;
   }
 }
 .progress-bar__input:not(:checked) + label:after {
