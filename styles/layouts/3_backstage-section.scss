@@ -1,0 +1,133 @@
+.backstage-section {
+  background-image: url("../../assets/images/flower_foto1.png");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: top 12px right -93px;
+  padding: 140px 0 176px 0;
+}
+.backstage-section__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.backstage-section__img-content {
+  width: 609px;
+  height: 403px;
+  margin: 0;
+  overflow: hidden;
+  margin-right: 30px;
+  min-width: 455px;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.backstage-section__text-content {
+  max-width: 465px;
+  color: $color-black-blue;
+  h2 {
+    @include font_48;
+    margin-bottom: 20px;
+  }
+  p {
+    &:first-of-type {
+      margin-bottom: 54px;
+    }
+    &:last-of-type {
+      line-height: 140%;
+    }
+  }
+  h3 {
+    @include font_24;
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 1000px) {
+  .backstage-section {
+    background: none;
+    padding: 109px 0 152px 0;
+  }
+  .backstage-section__img-content {
+    width: 455px;
+    height: 408px;
+  }
+  .backstage-section__text-content {
+    max-width: 454px;
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .backstage-section {
+    padding: 68px 0 80px 0;
+    background-image: url("../../assets/images/flower_foto1.png");
+    background-repeat: no-repeat;
+    background-size: 231px 476px;
+    background-position: top -6px right -103px;
+  }
+  .backstage-section__img-content {
+    display: none;
+  }
+  .backstage-section__text-content {
+    max-width: 495px;
+    h2 {
+      margin-left: 4px;
+      margin-bottom: 22px;
+    }
+    p {
+      &:first-of-type {
+        margin-bottom: 30px;
+      }
+      &:last-of-type {
+        line-height: 137%;
+      }
+    }
+    h3 {
+      margin-left: 4px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .backstage-section {
+    position: relative;
+    padding: 39px 0 0px 0;
+    background: none;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 105px;
+      height: 217px;
+      background-image: url("../../assets/images/flower_foto1.png");
+      background-repeat: no-repeat;
+      background-size: 105px 217px;
+      top: -36px;
+      right: -74px;
+    }
+  }
+  .backstage-section__text-content {
+    max-width: 100%;
+    h2 {
+      @include font_24;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    p {
+      &:first-of-type {
+        margin-bottom: 20px;
+        margin-left: 2px;
+      }
+      &:last-of-type {
+        margin-bottom: 20px;
+        margin-left: 0;
+      }
+    }
+    h3 {
+      margin-left: 2px;
+      margin-bottom: 10px;
+    }
+  }
+}

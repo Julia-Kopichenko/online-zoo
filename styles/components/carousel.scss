@@ -1,19 +1,30 @@
 .carousel {
-  position: relative;
-  & .button-ellipse--prev {
-    position: absolute;
-    left: -82px;
-    top: 405px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .carousel__gallery {
+    margin: 0 29px;
   }
-  & .button-ellipse--next {
-    position: absolute;
-    right: -82px;
-    top: 405px;
+  .button-ellipse--prev {
+    // position: absolute;
+    // left: -82px;
+    // top: 405px;
+  }
+  .button-ellipse--next {
+    // position: absolute;
+    // right: -82px;
+    // top: 405px;
+  }
+  @media (max-width: 999px) {
+
   }
 }
+
 .carousel__gallery {
   display: grid;
-  grid-template-columns: repeat(3, 366px);
+  // grid-template-columns: repeat(3, 366px);
+  // grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 426px);
   grid-column-gap: 29px;
   grid-row-gap: 20px;

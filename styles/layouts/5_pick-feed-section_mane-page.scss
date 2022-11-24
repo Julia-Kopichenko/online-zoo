@@ -9,27 +9,27 @@
   backdrop-filter: blur(2px);
   padding: 40px 40px 60px 40px;
   color: $color-black-blue;
-  & .pick-feed-section__title {
+  .pick-feed-section__title {
     margin-bottom: 32px;
   }
-  & .pick-feed-section__font1,
-  & .pick-feed-section__font2,
-  & .pick-feed-section__font3 {
+  .pick-feed-section__font1,
+  .pick-feed-section__font2,
+  .pick-feed-section__font3 {
     padding-left: 60px;
   }
-  & .pick-feed-section__font1 {
+  .pick-feed-section__font1 {
     margin-bottom: 40px;
   }
-  & .pick-feed-section__font2 {
+  .pick-feed-section__font2 {
     margin-bottom: 10px;
   }
-  & .pick-feed-section__font3 {
+  .pick-feed-section__font3 {
     margin-bottom: 60px;
   }
-  & .pick-feed-section__caption {
+  .pick-feed-section__caption {
     margin-bottom: 40px;
   }
-  & .cards-instruction {
+  .cards-instruction {
     margin: 0 0 62px;
   }
 }
@@ -45,7 +45,6 @@
   line-height: 130%;
 }
 .pick-feed-section__font3 {
-  @include font_16;
   & a {
     color: $color-black-blue;
     border-bottom: 1px solid $color-orange-light;

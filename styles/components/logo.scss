@@ -1,21 +1,39 @@
-.logo {
-  & .logo__img {
-    width: 82px;
-    padding: 2px 0;
-    background-image: url("../../assets/svg/bamboo.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 6px left 10px;
-    text-align: center;
-    border: 1.18841px solid #ffffff;
-    @include logo_text;
-    & .logo__text {
-      color: $color-white;
-      transition: all 0.5s ease;
-      &:hover {
-        color: transparent;
-        -webkit-background-clip: text;
-        background-image: $color-orange;
-      }
-    }
+.logo__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  background-image: url("../../assets/svg/bamboo-logo.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 6px left 10px;
+  border: 1.18841px solid #ffffff;
+  padding: 2px;
+}
+.logo__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: $color-white;
+  text-align: center;
+  transition: all 0.5s ease;
+  &:hover {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: $color-orange;
+  }
+}
+@media (max-width: 640px) {
+  .logo__img {
+    width: 47px;
+    height: 29px;
+    background-image: url("../../assets/svg/bamboo-logo-small.svg");
+    background-position: bottom 1px left 2px;
+    border: 0.768116px solid #ffffff;
+  }
+  .logo__text {
+    font-size: 12.2899px;
+    line-height: 120%;
   }
 }

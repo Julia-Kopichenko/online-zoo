@@ -1,0 +1,121 @@
+.favorite-animal-section {
+  padding: 86px 0 100px;
+  background-image: url("../../assets/images/giant_panda1.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -$header-height;
+  background-size: 100%;
+  .container {
+    display: flex;
+    justify-content: end;
+  }
+}
+.favorite-animal-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h2 {
+    max-width: 500px;
+    position: relative;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-bottom: 60px;
+    span {
+      color: $color-yellow;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 465px;
+      height: 465px;
+      bottom: 10px;
+      right: 110px;
+      z-index: -1;
+      border-radius: 50%;
+      background: $color-orange;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .favorite-animal-section {
+    padding: 42px 0 47px;
+    background-position-y: -$header-height;
+    background-size: 120%;
+  }
+  .favorite-animal-section__content {
+    margin-right: 57px;
+    h2 {
+      max-width: 400px;
+      font-size: 85px;
+      margin-bottom: 40px;
+      &::before {
+        content: "";
+        width: 367px;
+        height: 367px;
+        bottom: 5px;
+        right: 90px;
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .favorite-animal-section {
+    padding: 48px 0 40px;
+    background-position-y: -$header-height-small;
+    .container {
+      display: block;
+    }
+  }
+  .favorite-animal-section__content {
+    margin-right: 0;
+    h2 {
+      max-width: 255px;
+      align-self: flex-end;
+      font-size: 54.2894px;
+      margin-bottom: 0;
+      margin-right: -3px;
+      &::before {
+        content: "";
+        width: 237px;
+        height: 237px;
+        right: 55px;
+      }
+    }
+    button {
+      align-self: flex-start;
+      margin-top: -7px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .favorite-animal-section {
+    padding: 42px 0 0px;
+    background-position-y: 0;
+    .container {
+      display: block;
+    }
+  }
+  .favorite-animal-section__content {
+    h2 {
+      max-width: 128px;
+      font-size: 28px;
+      margin-right: 0;
+      &::before {
+        content: "";
+        width: 119px;
+        height: 119px;
+        right: 28px;
+      }
+      margin-bottom: 60px;
+    }
+    button {
+      align-self: center;
+      margin-top: 0;
+    }
+  }
+}

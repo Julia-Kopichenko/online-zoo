@@ -1,12 +1,8 @@
-.menu {
-  & .menu__item {
-    &:not(:last-of-type) {
-      margin-right: 58px;
-    }
-  }
-}
 .menu__item {
-  & a {
+  &:not(:last-of-type) {
+    padding-right: 58px;
+  }
+  a {
     display: block;
     font-weight: 500;
     line-height: 140%;
@@ -24,4 +20,15 @@
       background-image: $color-orange;
     }
   }
+}
+@media (max-width: 1000px) {
+  .menu__item {
+    &:not(:last-of-type) {
+      padding-right: 48px;
+    }
+  }
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 320px) {
 }

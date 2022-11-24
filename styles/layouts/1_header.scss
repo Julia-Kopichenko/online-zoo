@@ -1,8 +1,9 @@
 .header {
   background-color: $color-black;
+  z-index: 3;
 }
 .header__container {
-  height: 80px;
+  height: $header-height;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,4 +16,15 @@
 .header__menu,
 .header__logo {
   margin-right: 63px;
+}
+
+@media (max-width: 640px) {
+  .header__container {
+    height: $header-height-small;
+  }
+  .header__navigation {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
 }
