@@ -84,12 +84,23 @@
       <section class="pets-section">
         <div class="container">
           <div class="carousel">
-            <button class="button-ellipse button-ellipse--prev"><svg width="18" height="10" viewBox="0 0 18 10"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.00179 9.10745L5.10646 9.2094L5.21112 9.10745L5.35128 8.97092L5.46159 8.86347L5.35128 8.75602L1.74841 5.24656L17 5.24656H17.15V5.09656V4.90344V4.75344H17L1.74878 4.75344L5.35129 1.24398L5.46158 1.13653L5.35128 1.02909L5.21112 0.892552L5.10646 0.790595L5.00179 0.892553L0.895334 4.89275L0.785027 5.0002L0.895338 5.10764L5.00179 9.10745Z"
-                  fill="white" stroke="white" stroke-width="0.3" />
-              </svg></button>
+            <!-- Buttons -->
+            <div class="btn-wrapper">
+              <button class="button-ellipse button-ellipse--prev"><svg width="18" height="10" viewBox="0 0 18 10"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.00179 9.10745L5.10646 9.2094L5.21112 9.10745L5.35128 8.97092L5.46159 8.86347L5.35128 8.75602L1.74841 5.24656L17 5.24656H17.15V5.09656V4.90344V4.75344H17L1.74878 4.75344L5.35129 1.24398L5.46158 1.13653L5.35128 1.02909L5.21112 0.892552L5.10646 0.790595L5.00179 0.892553L0.895334 4.89275L0.785027 5.0002L0.895338 5.10764L5.00179 9.10745Z"
+                    fill="white" stroke="white" stroke-width="0.3" />
+                </svg></button>
+              <button class="button-ellipse button-ellipse--next"><svg width="18" height="10" viewBox="0 0 18 10"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9982 0.892548L12.8935 0.7906L12.7889 0.892552L12.6487 1.02908L12.5384 1.13653L12.6487 1.24398L16.2516 4.75344H1H0.85V4.90344V5.09656V5.24656H1H16.2512L12.6487 8.75602L12.5384 8.86347L12.6487 8.97091L12.7889 9.10745L12.8935 9.2094L12.9982 9.10745L17.1047 5.10725L17.215 4.9998L17.1047 4.89236L12.9982 0.892548Z"
+                    fill="white" stroke="white" stroke-width="0.3" />
+                </svg></button>
+            </div>
+            <!-- Gallery -->
+
             <ul class="carousel__gallery">
               <li class="card">
                 <div class="card__img">
@@ -100,7 +111,7 @@
                     <h3>giant Pandas</h3>
                     <p>Native to Southwest China</p>
                   </div>
-                  <img src="../../assets/images/banana-bamboo_icon.png" alt="banana-icon">
+                  <img class="banana-icon" src="../../assets/images/banana-bamboo_icon.png" alt="banana-icon">
                 </div>
               </li>
               <li class="card">
@@ -112,7 +123,7 @@
                     <h3>Eagles</h3>
                     <p>Native to South America</p>
                   </div>
-                  <img class="card__icon" src="../../assets/images/meet-fish_icon.png" alt="meet-fish-icon">
+                  <img class="meet-fish-icon" src="../../assets/images/meet-fish_icon.png" alt="meet-fish-icon">
                 </div>
               </li>
               <li class="card">
@@ -124,7 +135,7 @@
                     <h3>Gorillas</h3>
                     <p>Native to Congo</p>
                   </div>
-                  <img class="card__icon" src="../../assets/images/banana-bamboo_icon.png" alt="banana-icon">
+                  <img class="banana-icon" src="../../assets/images/banana-bamboo_icon.png" alt="banana-icon">
                 </div>
               </li>
               <li class="card">
@@ -136,7 +147,7 @@
                     <h3>Two-toed Sloth</h3>
                     <p>Mesoamerica, South America</p>
                   </div>
-                  <img class="card__icon" src="../../assets/images/banana-bamboo_icon.png" alt="banana-icon">
+                  <img class="banana-icon" src="../../assets/images/banana-bamboo_icon.png" alt="banana-icon">
                 </div>
               </li>
               <li class="card">
@@ -148,7 +159,7 @@
                     <h3>cheetahs</h3>
                     <p>Native to Africa</p>
                   </div>
-                  <img class="card__icon" src="../../assets/images/meet-fish_icon.png" alt="meet-fish-icon">
+                  <img class="meet-fish-icon" src="../../assets/images/meet-fish_icon.png" alt="meet-fish-icon">
                 </div>
               </li>
               <li class="card">
@@ -160,16 +171,11 @@
                     <h3>Penguins</h3>
                     <p>Native to Antarctica</p>
                   </div>
-                  <img class="card__icon" src="../../assets/images/meet-fish_icon.png" alt="meet-fish-icon">
+                  <img class="meet-fish-icon" src="../../assets/images/meet-fish_icon.png" alt="meet-fish-icon">
                 </div>
               </li>
             </ul>
-            <button class="button-ellipse button-ellipse--next"><svg width="18" height="10" viewBox="0 0 18 10"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.9982 0.892548L12.8935 0.7906L12.7889 0.892552L12.6487 1.02908L12.5384 1.13653L12.6487 1.24398L16.2516 4.75344H1H0.85V4.90344V5.09656V5.24656H1H16.2512L12.6487 8.75602L12.5384 8.86347L12.6487 8.97091L12.7889 9.10745L12.8935 9.2094L12.9982 9.10745L17.1047 5.10725L17.215 4.9998L17.1047 4.89236L12.9982 0.892548Z"
-                  fill="white" stroke="white" stroke-width="0.3" />
-              </svg></button>
+
           </div>
           <div class="button-container">
             <button class="button button--primary">choose your favorite</button>

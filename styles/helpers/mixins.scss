@@ -47,3 +47,17 @@
   font-size: 15px;
   line-height: 120%;
 }
+@mixin font_13 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 120%;
+}
+@mixin font_13_bold {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
+}

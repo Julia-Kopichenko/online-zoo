@@ -1,31 +1,166 @@
 .carousel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   .carousel__gallery {
     margin: 0 29px;
   }
-  .button-ellipse--prev {
-    // position: absolute;
-    // left: -82px;
-    // top: 405px;
-  }
-  .button-ellipse--next {
-    // position: absolute;
-    // right: -82px;
-    // top: 405px;
-  }
-  @media (max-width: 999px) {
-
-  }
+}
+.btn-wrapper {
+  position: absolute;
+  top: 405px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .carousel__gallery {
   display: grid;
-  // grid-template-columns: repeat(3, 366px);
-  // grid-template-columns: 1fr 1fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(3, 366px);
   grid-template-rows: repeat(2, 426px);
   grid-column-gap: 29px;
   grid-row-gap: 20px;
+}
+// ANIMAL CARD
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 366px;
+  height: 426px;
+  border-radius: 5px;
+  border: 1px solid orange;
+  overflow: hidden;
+  &:hover {
+    cursor: pointer;
+    & .card__img img {
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+    & .card__info-wrapper {
+      opacity: 1;
+    }
+    .card__info {
+      transform: translate(0, -60px) scale(1.1);
+      color: $color-white;
+      transition: transform 0.5s, color 0.5s;
+    }
+  }
+}
+.card__img {
+  display: inline-block; /* Строчно-блочный элемент */
+  overflow: hidden; /* Скрываем всё за контуром */
+  background: #000; /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+  img {
+    max-width: 100%;
+    width: 366px;
+    height: 366px;
+    opacity: 1;
+    transition: opacity 0.2s linear, transform 0.2s linear; /* Плавное изменение прозрачности и увеличения */
+    display: block; /* Убираем небольшой отступ снизу */
+  }
+}
+.card__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 12px 8px 16px;
+}
+.card__info {
+  @include font_15;
+  transition: transform 0.1s, color 0.1s;
+  h3 {
+    @include font_16_bold;
+    text-transform: uppercase;
+    text-align: start;
+  }
+}
+.banana-icon {
+  width: 33px;
+  height: 37px;
+}
+.meet-fish-icon {
+  width: 48px;
+  height: 38px;
+}
+
+@media (max-width: 1000px) {
+  .carousel__gallery {
+    grid-template-columns: repeat(3, 294px);
+    grid-template-rows: repeat(2, 354px);
+    grid-column-gap: 29px;
+    grid-row-gap: 92px;
+  }
+  .card {
+    width: 294px;
+    height: 354px;
+  }
+  .card__img {
+    img {
+      width: 294px;
+      height: 294px;
+    }
+  }
+  .btn-wrapper {
+    position: absolute;
+    left: 323px;
+    top: 368px;
+    width: 294px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 640px) {
+  .carousel__gallery {
+    grid-template-columns: repeat(2, 285px);
+    grid-template-rows: repeat(2, 332px);
+  }
+  .card {
+    width: 285px;
+    height: 332px;
+    &:nth-child(n + 5) {
+      display: none;
+    }
+  }
+  .card__img {
+    width: 285px;
+    height: 285px;
+    img {
+      width: 285px;
+      height: 285px;
+    }
+  }
+  .card__info-wrapper {
+    padding: 6px 10px 10px 10px;
+  }
+  .card__info {
+    @include font_13;
+    letter-spacing: -0.4px;
+    line-height: 100%;
+    h3 {
+      @include font_13_bold;
+    }
+  }
+  .banana-icon {
+    width: 25.72px;
+    height: 28.84px;
+  }
+  .meet-fish-icon {
+    width: 37.41px;
+    height: 29.62px;
+  }
+  .btn-wrapper {
+    top: 342px;
+    left: 223px;
+    width: 155px;
+  }
+}
+@media (max-width: 320px) {
+  .carousel__gallery {
+    grid-template-columns: repeat(1, 285px);
+    grid-row-gap: 20px;
+  }
+  .btn-wrapper {
+    display: none;
+  }
 }

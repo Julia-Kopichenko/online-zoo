@@ -46,7 +46,7 @@
 @media (max-width: 1000px) {
   .backstage-section {
     background: none;
-    padding: 109px 0 152px 0;
+    padding: 109px 0 142px 0;
   }
   .backstage-section__img-content {
     width: 455px;
@@ -93,7 +93,7 @@
 @media (max-width: 320px) {
   .backstage-section {
     position: relative;
-    padding: 39px 0 0px 0;
+    padding: 40px 0 40px 0;
     background: none;
     &::after {
       position: absolute;
@@ -121,7 +121,6 @@
         margin-left: 2px;
       }
       &:last-of-type {
-        margin-bottom: 20px;
         margin-left: 0;
       }
     }

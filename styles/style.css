@@ -521,13 +521,38 @@ body {
   background: #767474;
 }
 
+.carousel {
+  position: relative;
+}
+.carousel .carousel__gallery {
+  margin: 0 29px;
+}
+
+.btn-wrapper {
+  position: absolute;
+  top: 405px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel__gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 366px);
+  grid-template-rows: repeat(2, 426px);
+  grid-column-gap: 29px;
+  grid-row-gap: 20px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  max-width: 366px;
-  min-height: 426px;
+  width: 366px;
+  height: 426px;
   border-radius: 5px;
   border: 1px solid orange;
   overflow: hidden;
@@ -587,22 +612,101 @@ body {
   text-align: start;
 }
 
-.carousel {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.carousel .carousel__gallery {
-  margin: 0 29px;
-}
-.carousel__gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 426px);
-  grid-column-gap: 29px;
-  grid-row-gap: 20px;
+.banana-icon {
+  width: 33px;
+  height: 37px;
 }
 
+.meet-fish-icon {
+  width: 48px;
+  height: 38px;
+}
+
+@media (max-width: 1000px) {
+  .carousel__gallery {
+    grid-template-columns: repeat(3, 294px);
+    grid-template-rows: repeat(2, 354px);
+    grid-column-gap: 29px;
+    grid-row-gap: 92px;
+  }
+  .card {
+    width: 294px;
+    height: 354px;
+  }
+  .card__img img {
+    width: 294px;
+    height: 294px;
+  }
+  .btn-wrapper {
+    position: absolute;
+    left: 323px;
+    top: 368px;
+    width: 294px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 640px) {
+  .carousel__gallery {
+    grid-template-columns: repeat(2, 285px);
+    grid-template-rows: repeat(2, 332px);
+  }
+  .card {
+    width: 285px;
+    height: 332px;
+  }
+  .card:nth-child(n+5) {
+    display: none;
+  }
+  .card__img {
+    width: 285px;
+    height: 285px;
+  }
+  .card__img img {
+    width: 285px;
+    height: 285px;
+  }
+  .card__info-wrapper {
+    padding: 6px 10px 10px 10px;
+  }
+  .card__info {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.4px;
+    line-height: 100%;
+  }
+  .card__info h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+  }
+  .banana-icon {
+    width: 25.72px;
+    height: 28.84px;
+  }
+  .meet-fish-icon {
+    width: 37.41px;
+    height: 29.62px;
+  }
+  .btn-wrapper {
+    top: 342px;
+    left: 223px;
+    width: 155px;
+  }
+}
+@media (max-width: 320px) {
+  .carousel__gallery {
+    grid-template-columns: repeat(1, 285px);
+    grid-row-gap: 20px;
+  }
+  .btn-wrapper {
+    display: none;
+  }
+}
 .subscribe-form .flex {
   margin-top: 13px;
 }
@@ -901,7 +1005,7 @@ body {
 @media (max-width: 1000px) {
   .backstage-section {
     background: none;
-    padding: 109px 0 152px 0;
+    padding: 109px 0 142px 0;
   }
   .backstage-section__img-content {
     width: 455px;
@@ -944,7 +1048,7 @@ body {
 @media (max-width: 320px) {
   .backstage-section {
     position: relative;
-    padding: 39px 0 0px 0;
+    padding: 40px 0 40px 0;
     background: none;
   }
   .backstage-section::after {
@@ -976,7 +1080,6 @@ body {
     margin-left: 2px;
   }
   .backstage-section__text-content p:last-of-type {
-    margin-bottom: 20px;
     margin-left: 0;
   }
   .backstage-section__text-content h3 {
@@ -985,8 +1088,8 @@ body {
   }
 }
 .pets-section {
-  background: url("../../assets/images/flower_foto2.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom right;
-  padding-bottom: 10rem;
+  background: url("../../assets/images/palm_photo.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom right;
+  padding-bottom: 100px;
 }
 .pets-section .container {
   max-width: 1400px;
@@ -995,6 +1098,30 @@ body {
   margin-bottom: 80px;
 }
 
+@media (max-width: 1000px) {
+  .pets-section {
+    background: url("../../assets/images/palm_foto_small_desktop.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom right/241px 180px;
+    padding-bottom: 140px;
+  }
+}
+@media (max-width: 640px) {
+  .pets-section {
+    background: url("../../assets/images/palm_foto_tablet.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom right/175px 131px;
+    padding-bottom: 100px;
+  }
+  .pets-section .carousel {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .pets-section {
+    background: url("../../assets/images/palm_foto_mobile.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom -2px right -16px/85px 71px;
+    padding-bottom: 60px;
+  }
+  .pets-section .carousel {
+    margin-bottom: 20px;
+  }
+}
 .pick-feed-section {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
   padding: 70px 0px 100px 0px;

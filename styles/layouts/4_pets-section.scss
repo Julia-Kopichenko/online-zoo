@@ -1,11 +1,38 @@
 .pets-section {
-  background: url("../../assets/images/flower_foto2.png") no-repeat bottom left,
+  background: url("../../assets/images/palm_photo.png") no-repeat bottom left,
     url("../../assets/images/flower_foto3.png") no-repeat bottom right;
-  padding-bottom: 10rem;
+  padding-bottom: 100px;
   .container {
     max-width: 1400px;
   }
   .carousel {
     margin-bottom: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  .pets-section {
+    background: url("../../assets/images/palm_foto_small_desktop.png") no-repeat bottom left,
+      url("../../assets/images/flower_foto3.png") no-repeat bottom right/241px 180px;
+    padding-bottom: 140px;
+  }
+}
+@media (max-width: 640px) {
+  .pets-section {
+    background: url("../../assets/images/palm_foto_tablet.png") no-repeat bottom left,
+      url("../../assets/images/flower_foto3.png") no-repeat bottom right/175px 131px;
+    padding-bottom: 100px;
+    .carousel {
+      margin-bottom: 60px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .pets-section {
+    background: url("../../assets/images/palm_foto_mobile.png") no-repeat bottom left,
+      url("../../assets/images/flower_foto3.png") no-repeat bottom -2px right -16px/85px 71px;
+    padding-bottom: 60px;
+    .carousel {
+      margin-bottom: 20px;
+    }
   }
 }
