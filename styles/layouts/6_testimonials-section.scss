@@ -1,20 +1,36 @@
 .testimonials-section {
-  background: url("../../assets/images/leav_foto.png") no-repeat bottom -135px right;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../assets/images/leav_foto.png") 0 0 no-repeat;
+    width: 300.92px;
+    height: 295.45px;
+    bottom: -19px;
+    right: -53px;
+    z-index: -1;
+  }
   padding: 140px 0 180px 0;
   h2 {
     @include font_36;
     color: $color-black-blue;
     margin-bottom: 46px;
   }
+  .testimonials-cards-container {
+    margin-bottom: 21px;
+  }
   .testimonials-cards {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 31px;
   }
   .button-container {
     justify-content: flex-start;
   }
 }
 .testimonials-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   width: 100%;
 }
 .testimonials-card {
@@ -29,6 +45,9 @@
   background: linear-gradient($color-gray-light, $color-gray-light) padding-box, $color-pink-gradient border-box;
   border: solid 2px transparent;
   padding: 15px 15px 15px 15px;
+  .testimonials-card__user {
+    margin-bottom: 10px;
+  }
 }
 // user fhoto
 .user-photo {
@@ -67,7 +86,7 @@
     height: 5px;
     border-radius: 5px;
     background-color: $color-gray-smoky-light;
-    margin: 0 8px;
+    margin: 0 5px;
   }
 }
 // text-of-testimonial
@@ -78,21 +97,15 @@
   line-height: 120%;
   @include font_15;
   color: $color-gray;
-  margin-top: 10px;
   overflow: hidden;
 }
-
 // line-scroll
 .line-scroll {
-  margin: 21px 0 15px;
-  -webkit-appearance: none;
   appearance: none;
   width: 600px;
   height: 8px;
-  background: #f5f7f6;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   border: solid 0.5px transparent;
   background: linear-gradient($color-gray-light, $color-gray-light) padding-box, $color-pink-gradient border-box;
@@ -114,5 +127,116 @@
     border-radius: 5px;
     background: $color-orange-light;
     cursor: pointer;
+  }
+}
+@media (max-width: 1000px) {
+  .testimonials-section {
+    padding: 100px 0 140px 0;
+    &::before {
+      background-size: 200px 323px;
+      width: 200px;
+      height: 323px;
+      bottom: -84px;
+      right: 0px;
+    }
+    h2 {
+      margin-bottom: 32px;
+    }
+    .testimonials-cards {
+      margin-bottom: 52px;
+      & ::-webkit-slider-thumb {
+        width: 75px;
+      }
+    }
+    .line-scroll {
+      margin-right: 12px;
+    }
+  }
+  .testimonials-card {
+    padding: 12px 15px 8px 10px;
+    width: 293px;
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+  .line-scroll {
+    width: 390px;
+  }
+}
+@media (max-width: 640px) {
+  .testimonials-section {
+    padding: 60px 0 80px 0;
+    &::before {
+      background-size: 116px 204px;
+      width: 116px;
+      height: 204px;
+      bottom: -69px;
+      right: -4px;
+    }
+    // background-size: 116px 204px;
+    // background-position: bottom -69px right -4px;
+    h2 {
+      margin-bottom: 30px;
+    }
+    .testimonials-cards {
+      margin-bottom: 40px;
+    }
+    .testimonials-cards-container {
+      margin-bottom: 0px;
+    }
+    .button-container {
+      justify-content: center;
+      .button {
+        min-width: 240px;
+      }
+    }
+  }
+  .testimonials-cards-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .testimonials-card {
+    width: 100%;
+    height: 109px;
+    .testimonials-card__user {
+      margin-bottom: 11px;
+    }
+    .testimonials-card__text {
+      margin-left: 6px;
+    }
+  }
+  .line-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .testimonials-section {
+    padding: 30px 0 60px 0;
+    &::before {
+      background: url("../../assets/images/leav_foto_mobile.png") 0 0 no-repeat;
+      background-size: 51px 94px;
+      width: 51px;
+      height: 94px;
+      bottom: -29px;
+      right: 0px;
+    }
+    h2 {
+      @include font_24;
+      margin-bottom: 20px;
+    }
+    .testimonials-cards {
+      margin-bottom: 30px;
+    }
+  }
+  .testimonials-card {
+    padding: 7px 15px 10px 10px;
+    .testimonials-card__user {
+      margin-bottom: 9px;
+      .user-information {
+        margin-left: 7px;
+        margin-top: 2px;
+      }
+    }
   }
 }
