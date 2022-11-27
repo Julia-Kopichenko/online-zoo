@@ -29,6 +29,16 @@
   }
 }
 @media (max-width: 640px) {
+  .menu__item {
+    &:not(:last-of-type) {
+      padding-right: 37px;
+    }
+  }
 }
 @media (max-width: 320px) {
+  .menu__item {
+    &:not(:last-of-type) {
+      padding-right: 0;
+    }
+  }
 }

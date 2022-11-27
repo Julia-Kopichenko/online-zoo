@@ -23,9 +23,6 @@
     width: 100%;
     margin-bottom: 31px;
   }
-  .button-container {
-    justify-content: flex-start;
-  }
 }
 .testimonials-cards-container {
   display: flex;
@@ -129,6 +126,9 @@
     cursor: pointer;
   }
 }
+.testimonials-section__button-container {
+  justify-content: flex-start;
+}
 @media (max-width: 1000px) {
   .testimonials-section {
     padding: 100px 0 140px 0;
@@ -184,11 +184,11 @@
     .testimonials-cards-container {
       margin-bottom: 0px;
     }
-    .button-container {
-      justify-content: center;
-      .button {
-        min-width: 240px;
-      }
+  }
+  .testimonials-section__button-container {
+    justify-content: center;
+    .button {
+      min-width: 240px;
     }
   }
   .testimonials-cards-container {
