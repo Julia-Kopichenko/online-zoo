@@ -1964,6 +1964,7 @@ body {
 }
 
 .progress-bar__background {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1974,7 +1975,7 @@ body {
 }
 
 .progress-bar__background-line {
-  width: 915px;
+  width: 100%;
   height: 2px;
   background: #72828e;
   z-index: 1;
