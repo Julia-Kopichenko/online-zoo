@@ -29,9 +29,12 @@ body {
   @media (max-width: 1599px) {
     padding: 0 30px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 999px) {
     padding: 0 20px;
   }
+  // @media (max-width: 768px) {
+  //   padding: 0 20px;
+  // }
   @media (max-width: 480px) {
     padding: 0 10px;
   }
