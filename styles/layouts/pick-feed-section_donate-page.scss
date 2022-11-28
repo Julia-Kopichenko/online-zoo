@@ -1,3 +1,9 @@
+.top-section {
+  min-height: 390px;
+  background: url("../../assets/images/panda_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .pick-feed-section {
   & .container {
     padding: 0px 37px;

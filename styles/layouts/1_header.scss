@@ -8,23 +8,23 @@
   justify-content: space-between;
   align-items: center;
 }
+.logo-and-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 63px;
+}
 .header__navigation {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.header__menu,
-.header__logo {
-  margin-right: 63px;
-}
 
-@media (max-width: 640px) {
+@media (max-width: 999px) {
   .header__container {
     height: $header-height-small;
   }
-  .header__navigation {
+  .header__menu,
+  .design-by-container {
     display: none;
   }
-}
-@media (max-width: 320px) {
 }

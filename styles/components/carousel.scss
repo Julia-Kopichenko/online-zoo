@@ -1,10 +1,11 @@
-.carousel {
+.carousel-and-buttons-container {
   position: relative;
-  .carousel__gallery {
-    margin: 0 29px;
-  }
 }
-.btn-wrapper {
+.carousel__gallery {
+  position: relative;
+  margin: 0 29px;
+}
+.carousel__buttons {
   position: absolute;
   top: 405px;
   width: 100%;
@@ -13,7 +14,7 @@
   align-items: center;
 }
 
-.carousel__gallery {
+.gallery {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 366px);
@@ -84,8 +85,18 @@
   width: 48px;
   height: 38px;
 }
+@media (max-width: 1599px) {
+  .carousel__gallery {
+    grid-row-gap: 92px;
+  }
+  .carousel__buttons {
+    left: 36%;
+    top: 436px;
+    width: 365px;
+  }
+}
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   .carousel__gallery {
     grid-template-columns: repeat(3, 294px);
     grid-template-rows: repeat(2, 354px);
@@ -102,15 +113,13 @@
       height: 294px;
     }
   }
-  .btn-wrapper {
-    position: absolute;
-    left: 323px;
+  .carousel__buttons {
+    left: 35%;
     top: 368px;
     width: 294px;
-    justify-content: space-between;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 999px) {
   .carousel__gallery {
     grid-template-columns: repeat(2, 285px);
     grid-template-rows: repeat(2, 332px);
@@ -149,18 +158,18 @@
     width: 37.41px;
     height: 29.62px;
   }
-  .btn-wrapper {
+  .carousel__buttons {
     top: 342px;
     left: 223px;
     width: 155px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 639px) {
   .carousel__gallery {
     grid-template-columns: repeat(1, 285px);
     grid-row-gap: 20px;
   }
-  .btn-wrapper {
+  .carousel__buttons {
     display: none;
   }
 }

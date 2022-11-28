@@ -2,34 +2,12 @@
   background: $gradient-feed-friend;
   padding: 70px 0px 100px 0px;
 }
-
 .pick-feed-section__content {
   border-radius: 20px;
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   padding: 40px 40px 60px 40px;
   color: $color-black-blue;
-  .pick-feed-section__title {
-    margin-bottom: 32px;
-  }
-  .pick-feed-section__font1,
-  .pick-feed-section__font2,
-  .pick-feed-section__font3 {
-    padding-left: 60px;
-  }
-  .pick-feed-section__font1 {
-    margin-bottom: 40px;
-  }
-  .pick-feed-section__font2 {
-    margin-bottom: 10px;
-  }
-  .pick-feed-section__font3 {
-    margin-right: 150px;
-    margin-bottom: 60px;
-  }
-  .pick-feed-section__caption {
-    margin-bottom: 40px;
-  }
   .cards-instruction {
     margin-bottom: 62px;
   }
@@ -37,15 +15,20 @@
 .pick-feed-section__title {
   @include font_48;
   color: $color-orange-light;
+  margin-bottom: 32px;
 }
 .pick-feed-section__font1 {
   @include font_24;
+  margin-bottom: 40px;
 }
 .pick-feed-section__font2 {
   @include font_16_bold;
   line-height: 130%;
+  margin-bottom: 10px;
 }
 .pick-feed-section__font3 {
+  margin-right: 150px;
+  margin-bottom: 60px;
   & a {
     color: $color-black-blue;
     border-bottom: 1px solid $color-orange-light;
@@ -56,6 +39,12 @@
 }
 .pick-feed-section__caption {
   @include font_36;
+  margin-bottom: 40px;
+}
+.pick-feed-section__font1,
+.pick-feed-section__font2,
+.pick-feed-section__font3 {
+  padding-left: 60px;
 }
 // cards
 .cards-instruction {
@@ -110,7 +99,7 @@
   top: 60px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1599px) {
   .pick-feed-section {
     padding: 30px 0px 50px 0px;
   }
@@ -139,7 +128,7 @@
     }
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 999px) {
   .pick-feed-section {
     padding: 20px 0px 20px 0px;
     .container {
@@ -189,7 +178,7 @@
     z-index: 1;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 639px) {
   .pick-feed-section {
     .container {
       padding: 0 10px;
@@ -210,6 +199,7 @@
     }
     .cards-instruction {
       margin-right: 0px;
+      margin-left: 0;
       margin-bottom: 12px;
     }
   }
@@ -225,7 +215,8 @@
   }
   // cards
   .cards-instruction {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 0px;
     .instruction {
       margin-bottom: 27px;

@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- for adaptive layout -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- for fixed layout -->
-  <!-- <meta name="viewport" content="width=1240, initial-scale=1.0"> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../../styles/style.css">
   <title>online-zoo-donate</title>
 </head>
 
@@ -160,58 +157,62 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container flex">
-          <div class="left-block">
-            <div class="logo">
-              <h2 class="logo__img"><a href="../main/index.html" class="logo__text" title="Home">PetStory
-                  online</a></h2>
-            </div>
-            <div class="button-container">
-              <button class="button button--secondary" onclick="location.href='../donate/index.html'"
-                type="button">donate for volunteers</button>
-            </div>
-            <div class="bottom-block">
-              <div class="social-nav">
-                <a class="facebook" href="https://www.facebook.com/" target="_blank"><span></span></a>
-                <a class="twitter" href="https://twitter.com/" target="_blank"><span></span></a>
-                <a class="instagram" href="https://www.instagram.com/" target="_blank"><span></span></a>
-                <a class="youtube" href="https://www.youtube.com/" target="_blank"><span></span></a>
-              </div>
-              <nav class="footer__menu menu">
-                <ul class="menu__list flex">
-                  <li class="menu__item">
-                    <a href="../main/index.html">About</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="#explore">Map</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="#video">Zoos</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="#gallery">Contact us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+        <div class="footer__logo-subscribe-container">
+          <div class="footer__logo logo">
+            <h2 class="logo__img"><a href="./index.html" class="logo__text" title="Home">PetStory
+                online</a></h2>
           </div>
-          <div class="right-block">
-            <form action="#" class="subscribe-form">
-              <label for="email" class="subscribe-form__label">Subscribe to our news</label>
-              <div class="flex">
-                <input type="email" id="email" size="30" class="subscribe-form__input" placeholder="Enter your email"
-                  required>
-                <button type="submit" class="subscribe-form__button">Submit</button>
-              </div>
-            </form>
-            <div class="designed-by-text">
-              <p>Designed by Alisa Samborskaya</p>
-              <p>©RSSchool & ©Yem Digital 2021</p>
+          <form action="#" class="footer__subscribe-form subscribe-form">
+            <label for="email" class="subscribe-form__label">Subscribe to our news</label>
+            <div class="flex">
+              <input type="email" id="email" size="30" class="subscribe-form__input" placeholder="Enter your email"
+                required>
+              <button type="submit" class="subscribe-form__button">Submit</button>
             </div>
+          </form>
+        </div>
+        <div class="footer__button-container button-container">
+          <button class="button button--secondary" onclick="location.href='../donate/index.html'" type="button">donate
+            for
+            volunteers</button>
+        </div>
+
+        <div class="footer__bottom-block">
+
+          <div class="footer__social-nav social-nav">
+            <a class="social-nav-link facebook" href="https://www.facebook.com/"
+              target="_blank"><span>Facebook</span><span></span></a>
+            <a class="social-nav-link twitter" href="https://twitter.com/"
+              target="_blank"><span>Twitter</span><span></span></a>
+            <a class="social-nav-link instagram" href="https://www.instagram.com/"
+              target="_blank"><span>Instagram</span><span></span></a>
+            <a class="social-nav-link youtube" href="https://www.youtube.com/"
+              target="_blank"><span>YouTube</span><span></span></a>
+          </div>
+
+          <nav class="footer__menu menu">
+            <ul class="menu__list flex">
+              <li class="menu__item">
+                <a href="./index.html" class="active-link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#explore">Map</a>
+              </li>
+              <li class="menu__item">
+                <a href="#video">Zoos</a>
+              </li>
+              <li class="menu__item">
+                <a href="#gallery">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="designed-by-text">
+            <p>Designed by Alisa Samborskaya</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
           </div>
         </div>
       </div>
-      <!-- /container-->
     </footer>
   </div>
   <script src="./index.js"></script>
