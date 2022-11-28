@@ -5,10 +5,16 @@ html {
 body {
   font-family: "Roboto", Verdana, serif;
   font-size: 1.6rem;
+  font-weight: 400;
   font-style: normal;
-  //! for fixed layout
-  min-width: 1240px;
-  // background-color: black;
+  line-height: 130%;
+  // add color!
+  // footer be always at the end of page:
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: all 1s ease-in-out;
 }
 .wrapper {
   display: flex;
@@ -18,9 +24,17 @@ body {
 }
 .container {
   margin: 0 auto;
-  //! for fixed layout
   max-width: 1240px;
   padding: 0 40px;
+  @media (max-width: 1599px) {
+    padding: 0 30px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 480px) {
+    padding: 0 10px;
+  }
 }
 
 // FLEX

@@ -1,12 +1,10 @@
-.menu {
-  & .menu__item {
-    &:not(:last-of-type) {
-      margin-right: 58px;
-    }
-  }
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 58px;
 }
 .menu__item {
-  & a {
+  a {
     display: block;
     font-weight: 500;
     line-height: 140%;
@@ -23,5 +21,20 @@
       -webkit-background-clip: text;
       background-image: $color-orange;
     }
+  }
+}
+@media (max-width: 1599px) {
+  .menu__list {
+    gap: 48px;
+  }
+}
+@media (max-width: 999px) {
+  .menu__list {
+    gap: 37px;
+  }
+}
+@media (max-width: 639px) {
+  .menu__list {
+    gap: 30px;
   }
 }

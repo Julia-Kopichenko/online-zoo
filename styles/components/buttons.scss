@@ -15,6 +15,13 @@
   padding: 16px;
   background: $color-orange;
   transition: all 1s ease;
+  &.button--primary {
+    border-radius: 25px;
+  }
+  &.button--secondary {
+    border-radius: 5px;
+  }
+
   &:hover {
     background: linear-gradient(113.96deg, #e47209 1.49%, #e47209 101.44%);
   }
@@ -24,17 +31,11 @@
   &:disabled {
     background: $color-gray;
   }
-  &.button--primary {
-    border-radius: 25px;
-  }
-  &.button--secondary {
-    border-radius: 5px;
-  }
 }
 
 .button-ellipse {
-  min-width: 62px;
-  min-height: 62px;
+  width: 62px;
+  height: 62px;
   text-align: center;
   color: $color-white;
   background: $color-orange;

@@ -1,0 +1,144 @@
+.favorite-animal-section {
+  padding-top: 86px;
+  background-image: url("../../assets/images/giant_panda.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -$header-height;
+  background-size: 100%;
+  .container {
+    display: flex;
+    justify-content: end;
+  }
+}
+.favorite-animal-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .main-big-title {
+    z-index: 2;
+    margin-bottom: 60px;
+  }
+}
+.main-big-title {
+  max-width: 500px;
+  max-width: 500px;
+  position: relative;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  text-transform: uppercase;
+  span {
+    color: $color-yellow;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    bottom: 10px;
+    right: 110px;
+    z-index: -1;
+    border-radius: 50%;
+    background: $color-orange;
+  }
+}
+.favorite-animal-section__button-container {
+  margin-bottom: 100px;
+}
+@media (max-width: 1599px) {
+  .favorite-animal-section {
+    padding-top: 42px;
+    background-image: url("../../assets/images/giant_panda_small_desctop.png");
+    background-position-y: -$header-height;
+    background-size: 100%;
+  }
+  .favorite-animal-section__content {
+    margin-right: 57px;
+    .main-big-title {
+      margin-bottom: 40px;
+    }
+  }
+  .main-big-title {
+    max-width: 400px;
+    font-size: 85px;
+    &::before {
+      content: "";
+      width: 367px;
+      height: 367px;
+      bottom: 5px;
+      right: 90px;
+    }
+  }
+  .favorite-animal-section__button-container {
+    margin-bottom: 47px;
+  }
+}
+@media (max-width: 999px) {
+  .favorite-animal-section {
+    padding-top: 48px;
+    background-position-y: -$header-height-small;
+    .container {
+      display: block;
+    }
+  }
+  .favorite-animal-section__content {
+    margin-right: 0;
+    .main-big-title {
+      align-self: flex-end;
+      margin-bottom: 0;
+      margin-right: -3px;
+    }
+  }
+  .favorite-animal-section__button-container {
+    align-self: flex-start;
+    margin-top: -7px;
+  }
+}
+@media (max-width: 768px) {
+  .main-big-title {
+    max-width: 255px;
+    font-size: 54.2894px;
+    &::before {
+      content: "";
+      width: 237px;
+      height: 237px;
+      right: 55px;
+    }
+  }
+  .favorite-animal-section__button-container {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 639px) {
+  .favorite-animal-section__content {
+    .main-big-title {
+      margin-bottom: 60px;
+      margin-right: 0;
+    }
+  }
+  .favorite-animal-section {
+    padding-top: 42px;
+    background-position-y: 0;
+    .container {
+      display: block;
+    }
+  }
+
+  .main-big-title {
+    max-width: 128px;
+    font-size: 28px;
+    &::before {
+      content: "";
+      width: 119px;
+      height: 119px;
+      right: 28px;
+    }
+  }
+  .favorite-animal-section__button-container {
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+}

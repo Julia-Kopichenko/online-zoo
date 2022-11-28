@@ -1,15 +1,15 @@
-@mixin logo_text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  line-height: 120%;
-}
 @mixin font_48 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
+  line-height: 120%;
+}
+@mixin font_42 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
   line-height: 120%;
 }
 @mixin font_36 {
@@ -33,6 +33,20 @@
   font-size: 24px;
   line-height: 120%;
 }
+@mixin font_22 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+}
+@mixin font_18 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+}
 @mixin font_16 {
   font-family: "Roboto";
   font-style: normal;
@@ -53,4 +67,18 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
+}
+@mixin font_13 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 120%;
+}
+@mixin font_13_bold {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 140%;
 }

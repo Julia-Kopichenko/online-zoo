@@ -1,3 +1,9 @@
+.top-section {
+  min-height: 390px;
+  background: url("../../assets/images/panda_bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .pick-feed-section {
   & .container {
     padding: 0px 37px;
@@ -145,6 +151,7 @@ fieldset {
     width: 40px;
     height: 40px;
     background: url("../../assets/svg/roller_icon.svg") no-repeat;
+    z-index: 3;
   }
 }
 .progress-bar__input:not(:checked) + label:after {
