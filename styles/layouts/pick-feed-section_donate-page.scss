@@ -1,6 +1,6 @@
 .top-section {
   min-height: 390px;
-  background: url("../../assets/images/panda_bg.jpg") center no-repeat;
+  background: url("./../assets/images/panda_bg.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -70,7 +70,7 @@
   margin: 52px 11px 0 0;
 }
 .diet-info__icon-x {
-  background-image: url("../../assets/svg/x_icon.svg");
+  background-image: url("./../assets/svg/x_icon.svg");
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -150,7 +150,7 @@ fieldset {
     bottom: 43px;
     width: 40px;
     height: 40px;
-    background: url("../../assets/svg/roller_icon.svg") no-repeat;
+    background: url("./../assets/svg/roller_icon.svg") no-repeat;
     z-index: 3;
   }
 }
@@ -166,7 +166,7 @@ fieldset {
     content: "";
     width: 40px;
     height: 40px;
-    background: url("../../assets/svg/roller_icon.svg") no-repeat;
+    background: url("./../assets/svg/roller_icon.svg") no-repeat;
   }
 }
 .progress-bar__input:checked + label,
@@ -188,19 +188,19 @@ input[type="number"] {
   font-size: 16px;
   line-height: 140%;
   padding: 16px 9px;
-  background: url("../../assets/svg/dollar.svg") center right 10px no-repeat;
+  background: url("./../assets/svg/dollar.svg") center right 10px no-repeat;
   &:focus {
     outline: 1px solid $color-green;
     border: 0;
     color: $color-green;
-    background: url("../../assets/svg/greenDollar.svg") center right 10px no-repeat;
+    background: url("./../assets/svg/greenDollar.svg") center right 10px no-repeat;
   }
   &:invalid,
   &:invalid ~ .submit {
     outline: 1px solid $color-red;
     border: 0;
     color: $color-red;
-    background: url("../../assets/svg/redDollar.svg") center right 10px no-repeat;
+    background: url("./../assets/svg/redDollar.svg") center right 10px no-repeat;
   }
 }
 input[type="number"] {
