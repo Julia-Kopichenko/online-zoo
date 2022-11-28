@@ -467,7 +467,7 @@ body {
   .header__logo .logo__img {
     width: 47px;
     height: 29px;
-    background-image: url("../../assets/svg/bamboo-logo-small.svg");
+    background-image: url("./../assets/svg/bamboo-logo-small.svg");
     background-position: bottom 1px left 2px;
     border: 0.768116px solid #ffffff;
   }
@@ -800,19 +800,19 @@ body {
 }
 
 .facebook {
-  background-image: url("../../assets/svg/facebook.svg");
+  background-image: url("./../assets/svg/facebook.svg");
 }
 
 .twitter {
-  background-image: url("../../assets/svg/twitter.svg");
+  background-image: url("./../assets/svg/twitter.svg");
 }
 
 .instagram {
-  background-image: url("../../assets/svg/instagram.svg");
+  background-image: url("./../assets/svg/instagram.svg");
 }
 
 .youtube {
-  background-image: url("../../assets/svg/youtube.svg");
+  background-image: url("./../assets/svg/youtube.svg");
 }
 
 .header {
@@ -904,7 +904,7 @@ body {
 @media (max-width: 1599px) {
   .favorite-animal-section {
     padding-top: 42px;
-    background-image: url("../../assets/images/giant_panda_small_desctop.png");
+    background-image: url("./../assets/images/giant_panda_small_desctop.png");
     background-position-y: -80px;
     background-size: 100%;
   }
@@ -994,7 +994,7 @@ body {
   }
 }
 .backstage-section {
-  background-image: url("../../assets/images/flower_foto1.png");
+  background-image: url("./../assets/images/flower_foto1.png");
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top 12px right -93px;
@@ -1067,7 +1067,7 @@ body {
 @media (max-width: 999px) {
   .backstage-section {
     padding: 68px 0 80px 0;
-    background-image: url("../../assets/images/flower_foto1.png");
+    background-image: url("./../assets/images/flower_foto1.png");
     background-repeat: no-repeat;
     background-size: 231px 476px;
     background-position: top -6px right -103px;
@@ -1105,7 +1105,7 @@ body {
     display: block;
     width: 105px;
     height: 217px;
-    background-image: url("../../assets/images/flower_foto1.png");
+    background-image: url("./../assets/images/flower_foto1.png");
     background-repeat: no-repeat;
     background-size: 105px 217px;
     top: -36px;
@@ -1136,7 +1136,7 @@ body {
   }
 }
 .pets-section {
-  background: url("../../assets/images/palm_photo.png") bottom left/292px 460px no-repeat, url("../../assets/images/flower_foto3.png") bottom right/368px 275px no-repeat;
+  background: url("./../assets/images/palm_photo.png") bottom left/292px 460px no-repeat, url("./../assets/images/flower_foto3.png") bottom right/368px 275px no-repeat;
   padding-bottom: 100px;
 }
 .pets-section .container {
@@ -1149,13 +1149,13 @@ body {
 
 @media (max-width: 1599px) {
   .pets-section {
-    background: url("../../assets/images/palm_foto_small_desktop.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom right/241px 180px;
+    background: url("./../assets/images/palm_foto_small_desktop.png") no-repeat bottom left, url("./../assets/images/flower_foto3.png") no-repeat bottom right/241px 180px;
     padding-bottom: 140px;
   }
 }
 @media (max-width: 999px) {
   .pets-section {
-    background: url("../../assets/images/palm_foto_tablet.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom right/175px 131px;
+    background: url("./../assets/images/palm_foto_tablet.png") no-repeat bottom left, url("./../assets/images/flower_foto3.png") no-repeat bottom right/175px 131px;
     padding-bottom: 100px;
   }
   .pets-section__button-container {
@@ -1164,7 +1164,7 @@ body {
 }
 @media (max-width: 639px) {
   .pets-section {
-    background: url("../../assets/images/palm_foto_mobile.png") no-repeat bottom left, url("../../assets/images/flower_foto3.png") no-repeat bottom -2px right -16px/85px 71px;
+    background: url("./../assets/images/palm_foto_mobile.png") no-repeat bottom left, url("./../assets/images/flower_foto3.png") no-repeat bottom -2px right -16px/85px 71px;
     padding-bottom: 60px;
   }
   .pets-section__button-container {
@@ -1267,19 +1267,19 @@ body {
 }
 
 .icon-pay {
-  background-image: url("../../assets/svg/pay.svg");
+  background-image: url("./../assets/svg/pay.svg");
   width: 108px;
   height: 60px;
 }
 
 .icon-zoo {
-  background-image: url("../../assets/svg/zoo.svg");
+  background-image: url("./../assets/svg/zoo.svg");
   width: 86px;
   height: 95px;
 }
 
 .icon-monkey {
-  background-image: url("../../assets/svg/monkey.svg");
+  background-image: url("./../assets/svg/monkey.svg");
   width: 126px;
   height: 73px;
 }
@@ -1293,7 +1293,7 @@ body {
   position: absolute;
   content: "";
   display: inline-block;
-  background: url("../../assets/svg/vector.svg");
+  background: url("./../assets/svg/vector.svg");
   background-repeat: no-repeat;
   width: 70px;
   height: 35.08px;
@@ -1377,7 +1377,7 @@ body {
     position: absolute;
     content: "";
     display: inline-block;
-    background: url("../../assets/images/arrow.png");
+    background: url("./../assets/images/arrow.png");
     background-repeat: no-repeat;
     width: 90px;
     height: 70px;
@@ -1458,7 +1458,7 @@ body {
 .testimonials-section::before {
   content: "";
   position: absolute;
-  background: url("../../assets/images/leav_foto.png") 0 0 no-repeat;
+  background: url("./../assets/images/leav_foto.png") 0 0 no-repeat;
   width: 300.92px;
   height: 295.45px;
   bottom: -19px;
@@ -1512,19 +1512,19 @@ body {
 }
 
 .one .user-photo {
-  background-image: url("../../assets/svg/user_icon.svg");
+  background-image: url("./../assets/svg/user_icon.svg");
 }
 
 .two .user-photo {
-  background-image: url("../../assets/images/user_icon_2.png");
+  background-image: url("./../assets/images/user_icon_2.png");
 }
 
 .three .user-photo {
-  background-image: url("../../assets/images/user_icon_3.png");
+  background-image: url("./../assets/images/user_icon_3.png");
 }
 
 .four .user-photo {
-  background-image: url("../../assets/images/user_icon_4.png");
+  background-image: url("./../assets/images/user_icon_4.png");
 }
 
 .user-information {
@@ -1685,7 +1685,7 @@ body {
     padding: 30px 0 60px 0;
   }
   .testimonials-section::before {
-    background: url("../../assets/images/leav_foto_mobile.png") 0 0 no-repeat;
+    background: url("./../assets/images/leav_foto_mobile.png") 0 0 no-repeat;
     background-size: 51px 94px;
     width: 51px;
     height: 94px;

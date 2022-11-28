@@ -68,17 +68,17 @@
   background-color: $color-white;
 }
 .icon-pay {
-  background-image: url("../../assets/svg/pay.svg");
+  background-image: url("./../assets/svg/pay.svg");
   width: 108px;
   height: 60px;
 }
 .icon-zoo {
-  background-image: url("../../assets/svg/zoo.svg");
+  background-image: url("./../assets/svg/zoo.svg");
   width: 86px;
   height: 95px;
 }
 .icon-monkey {
-  background-image: url("../../assets/svg/monkey.svg");
+  background-image: url("./../assets/svg/monkey.svg");
   width: 126px;
   height: 73px;
 }
@@ -91,7 +91,7 @@
   position: absolute;
   content: "";
   display: inline-block;
-  background: url("../../assets/svg/vector.svg");
+  background: url("./../assets/svg/vector.svg");
   background-repeat: no-repeat;
   width: 70px;
   height: 35.08px;
@@ -169,7 +169,7 @@
     position: absolute;
     content: "";
     display: inline-block;
-    background: url("../../assets/images/arrow.png");
+    background: url("./../assets/images/arrow.png");
     background-repeat: no-repeat;
     width: 90px;
     height: 70px;
