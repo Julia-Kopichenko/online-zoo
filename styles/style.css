@@ -971,8 +971,8 @@ body {
 }
 @media (max-width: 999px) {
   .favorite-animal-section {
-    padding-top: 48px;
-    background-position-y: -34px;
+    padding-top: 82px;
+    background-position-y: 0;
   }
   .favorite-animal-section .container {
     display: block;
@@ -1011,8 +1011,8 @@ body {
     margin-right: 0;
   }
   .favorite-animal-section {
-    padding-top: 42px;
-    background-position-y: 0;
+    padding-top: 76px;
+    background-position-y: 34px;
   }
   .favorite-animal-section .container {
     display: block;
@@ -2189,7 +2189,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 1599px) {
   .top-section {
     min-height: 390px;
-    background: url("./../assets/images/panda_bg_donate_desctop.png") center no-repeat;
+    background: url("./../assets/images/panda_bg_donate_desctop.png") center bottom no-repeat;
     background-size: cover;
   }
   .donate-page .pick-feed-section {
@@ -2258,8 +2258,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 999px) {
   .top-section {
-    min-height: 335px;
-    background: url("./../assets/images/panda_bg_donate_tablet.png") center no-repeat;
+    min-height: 369px;
+    background: url("./../assets/images/panda_bg_donate_tablet.png") center bottom no-repeat;
     background-size: 100%;
   }
   .donate-page .container {
@@ -2337,8 +2337,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 @media (max-width: 639px) {
   .top-section {
-    min-height: 187px;
-    background: url("./../assets/images/panda_bg_donate_mobile.png") center no-repeat;
+    min-height: 221px;
+    background: url("./../assets/images/panda_bg_donate_mobile.png") center bottom no-repeat;
     background-size: 100%;
   }
   .donate-page .container {
