@@ -23,15 +23,6 @@
     color: $color-orange-light;
     margin-bottom: 60px;
   }
-  .footer {
-    .designed-by-text {
-      p {
-        &:first-of-type {
-          margin-bottom: 8px;
-        }
-      }
-    }
-  }
 }
 .donate {
   border-radius: 20px;
@@ -44,7 +35,7 @@
   }
 }
 .donate__diet-info {
-  margin: 0 11px 45px 0;
+  margin: 0 11px 50px 0;
 }
 .donate__title {
   @include font_48;
@@ -63,24 +54,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 90px;
 }
 .diet-info__days {
+  position: relative;
   p:first-of-type {
     font-weight: 500;
     font-size: 72px;
     line-height: 80%;
     text-align: center;
     color: $color-black;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
-  margin: 53px 11px 0 0;
+  padding-top: 60px;
+  // margin: 53px 11px 0 0;
+  &::before {
+    position: absolute;
+    background-image: url("./../assets/svg/x_icon.svg");
+    background-repeat: no-repeat;
+    content: "";
+    width: 14px;
+    height: 14px;
+    top: 85px;
+    right: -25px;
+  }
 }
-.diet-info__icon-x {
-  background-image: url("./../assets/svg/x_icon.svg");
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 14px;
-  margin: 25px 64px 0 0;
+.diet-info__img {
+  width: 284px;
+  height: 246px;
 }
 
 // donate-form
@@ -300,7 +301,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .donate__subtitle {
     margin-bottom: 60px;
   }
-  // progress-bar
+  // PROGRESS BAR
   .progress-bar__title {
     margin-left: 18px;
   }
@@ -308,9 +309,6 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 13px;
     margin-left: 17px;
     margin-right: 17px;
-  }
-  .progress-bar__background-line {
-    // width: 90%;
   }
   fieldset {
     margin-left: 17px;
@@ -338,6 +336,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-right: 19px;
   }
 }
+
 @media (max-width: 999px) {
   .top-section {
     min-height: 335px;
@@ -367,9 +366,6 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-left: 0px;
         width: 300px;
       }
-      .designed-by-text p:first-of-type {
-        margin-bottom: 11px;
-      }
     }
   }
 
@@ -386,16 +382,19 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: center;
   }
   .donate__diet-info {
-    margin: 0 10px 35px 0;
+    margin: 0 11px 42px 0;
   }
+  // DIET INFO
   .diet-info__days {
-    margin-top: 45px;
-    margin-right: 11px;
-    p:last-child {
-      margin-left: -5px;
+    padding-top: 57px;
+    p:first-of-type {
+      margin-bottom: 10px;
+    }
+    &::before {
+      top: 81px;
     }
   }
-
+  // PROGRESS BAR
   .progress-bar__background {
     margin-bottom: 13px;
     margin-left: 0px;
@@ -419,5 +418,125 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   .donate-form__amount {
     margin-bottom: 31px;
+  }
+}
+@media (max-width: 639px) {
+  .top-section {
+    min-height: 187px;
+    background: url("./../assets/images/panda_bg_donate_mobile.png") center no-repeat;
+    background-size: 100%;
+  }
+  .donate-page {
+    .container {
+      padding: 0 10px;
+    }
+    .pick-feed-section__caption {
+      @include font_24;
+      margin-bottom: 30px;
+    }
+    .pick-feed-section__text {
+      margin-bottom: 26px;
+    }
+    .pick-feed-section {
+      padding: 30px 0px 22px 0px;
+    }
+  }
+  .donate {
+    padding: 20px 0px 20px 0px;
+    .centered-text {
+      margin-left: -1px;
+    }
+  }
+  .donate__title {
+    @include font_24;
+    margin-bottom: 11px;
+  }
+  .donate__subtitle {
+    @include font_16;
+    margin-bottom: 12px;
+    margin-right: 0px;
+    text-align: center;
+  }
+  // DIET INFO
+  .diet-info {
+    gap: 50px;
+  }
+  .donate__diet-info {
+    margin: 0px;
+    margin-bottom: 4px;
+  }
+  .diet-info__img {
+    width: 160.15px;
+    height: 138.72px;
+  }
+  .diet-info__days {
+    padding-top: 30px;
+    p:first-of-type {
+      font-size: 40.6015px;
+      margin-bottom: 8px;
+    }
+    p:last-child {
+      font-weight: 400;
+      font-size: 9.02255px;
+      line-height: 140%;
+    }
+    &::before {
+      background-image: url("./../assets/svg/x_icon_small.svg");
+      width: 8px;
+      top: 44px;
+      right: -13px;
+    }
+  }
+  // PROGRESS BAR
+  .donate-form__progress-bar {
+    margin-bottom: 25px;
+  }
+  .progress-bar__background {
+    height: 13.5px;
+    margin-bottom: 5px;
+  }
+  .progress-bar__title {
+    margin-left: 0px;
+    margin-bottom: 8px;
+  }
+  .progress-bar__label {
+    width: 74px;
+    font-size: 13px;
+    margin-left: -9px;
+  }
+  .progress-bar__input:not(:checked) + label::before,
+  .progress-bar__input:checked + label::before {
+    content: "";
+    left: 9px;
+    bottom: 29px;
+    width: 5px;
+    height: 5px;
+  }
+  .progress-bar__input:not(:checked) + label::after,
+  .progress-bar__input:checked + label::after {
+    content: "";
+    left: 2px;
+    bottom: 21px;
+    width: 20px;
+    height: 20px;
+    background: url("./../assets/svg/roller_icon_small.svg") no-repeat;
+  }
+  .progress-bar__input:not(:checked) + label::after,
+  .progress-bar__input:checked + label::after {
+    content: "";
+    left: 2px;
+    bottom: 21px;
+    width: 20px;
+    height: 20px;
+    background: url("./../assets/svg/roller_icon_small.svg") no-repeat;
+  }
+  // AMOUNT
+  .donate-form__amount {
+    margin-bottom: 24px;
+  }
+  // OPTIONS
+  .donate-form__options {
+    margin-right: 21px;
+    margin-bottom: 27px;
   }
 }
