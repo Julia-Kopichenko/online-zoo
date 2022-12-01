@@ -16,6 +16,26 @@ body {
 
   transition: all 1s ease-in-out;
 }
+body.lock {
+  overflow: hidden;
+}
+.overlay {
+  position: fixed;
+  z-index: 5;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.overlay.active {
+  opacity: 0.8;
+  pointer-events: all;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

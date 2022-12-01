@@ -15,35 +15,23 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <div class="logo-and-nav-container">
+          <div class="header__logo-and-menu-wrapper">
             <div class="header__logo logo">
               <h1 class="logo__img"><a href="./index.html" class="logo__text" title="Home">PetStory
                   online</a></h1>
             </div>
             <nav class="header__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="./index.html" class="active-link">About</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#explore">Map</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#video">Zoos</a>
-                </li>
-                <li class="menu__item">
-                  <a href="../donate/index.html">Donate</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#gallery">Contact us</a>
-                </li>
+              <ul class="header__menu-list menu__list">
+                <li><a href="./index.html" class="menu__link active-link">About</a></li>
+                <li><a href="#" class="menu__link">Map</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Zoos</a></li>
+                <li><a href="../donate/index.html" class="menu__link">Donate</a></li>
+                <li><a href="#" class="menu__link">Contact us</a></li>
+                <li><a class="menu__link"
+                    href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
+                    target="_blank">Designed by ©</a></li>
               </ul>
             </nav>
-
-          </div>
-          <div class="design-by-container menu__item">
-            <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1"
-              target="_blank">Designed by ©</a>
           </div>
           <!-- hamburger -->
           <div class="hamburger">
@@ -414,20 +402,19 @@
             <a class="social-nav-link youtube" href="https://www.youtube.com/"
               target="_blank"><span>YouTube</span><span></span></a>
           </div>
-
           <nav class="footer__menu menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="./index.html" class="active-link">About</a>
+            <ul class="footer__menu-list menu__list">
+              <li>
+                <a href="./index.html" class="menu__link active-link">About</a>
               </li>
-              <li class="menu__item">
-                <a href="#explore">Map</a>
+              <li>
+                <a class="menu__link" href="#">Map</a>
               </li>
-              <li class="menu__item">
-                <a href="#video">Zoos</a>
+              <li>
+                <a class="menu__link" href="#">Zoos</a>
               </li>
-              <li class="menu__item">
-                <a href="#gallery">Contact us</a>
+              <li>
+                <a class="menu__link" href="#">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -440,6 +427,9 @@
       </div>
     </footer>
   </div>
+  <div class="overlay"></div>
+
+  <script src="../../js/burger-menu.js"></script>
   <script src="./script.js"></script>
 </body>
 

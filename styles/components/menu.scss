@@ -1,28 +1,31 @@
+.menu {
+  width: 100%;
+}
 .menu__list {
   display: flex;
-  flex-direction: row;
   gap: 58px;
 }
-.menu__item {
-  a {
-    display: block;
-    font-weight: 500;
-    line-height: 140%;
-    color: $color-white;
-    transition: all 0.5s ease;
-    &.active-link {
-      color: transparent;
-      -webkit-background-clip: text;
-      background-image: $color-orange;
-    }
-    &:hover,
-    &:active {
-      color: transparent;
-      -webkit-background-clip: text;
-      background-image: $color-orange;
-    }
+.menu__link {
+  display: block;
+  @include font_16_bold;
+  color: $color-white;
+  transition: all 0.5s ease;
+  &.active-link {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: $color-orange;
+  }
+  &:hover,
+  &:active {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: $color-orange;
   }
 }
+.footer .menu__link {
+  font-weight: 400;
+}
+
 @media (max-width: 1599px) {
   .menu__list {
     gap: 48px;
