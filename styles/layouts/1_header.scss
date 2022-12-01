@@ -1,6 +1,9 @@
 .header {
   background-color: $color-black;
   z-index: 10;
+  &.not-active {
+    z-index: 1;
+  }
 }
 .header__container {
   display: flex;
