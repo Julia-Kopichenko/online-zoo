@@ -563,39 +563,48 @@ body.lock {
   background: #767474;
 }
 
-.carousel-and-buttons-container {
+.carousel-abd-buttons-wrapper {
   position: relative;
 }
 
-.carousel__gallery {
-  position: relative;
-  margin: 0 29px;
+.carousel__wrapper {
+  width: 1158px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.carousel__buttons {
-  position: absolute;
-  top: 405px;
-  width: 100%;
+.carousel {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  left: -100%;
 }
 
 .gallery {
+  position: relative;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 366px);
   grid-template-rows: repeat(2, 426px);
-  grid-column-gap: 29px;
+  grid-column-gap: 30px;
   grid-row-gap: 20px;
 }
 
-.card {
+.carousel__buttons {
   display: flex;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  display: none;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  width: 366px;
+  width: 100%;
   height: 426px;
   border-radius: 5px;
   border: 1px solid orange;
@@ -615,6 +624,10 @@ body.lock {
   transform: translate(0, -60px) scale(1.1);
   color: white;
   transition: transform 0.5s, color 0.5s;
+}
+
+.card {
+  display: flex;
 }
 
 .card__img {
@@ -666,18 +679,37 @@ body.lock {
   height: 38px;
 }
 
-@media (max-width: 1599px) {
-  .carousel__gallery {
-    grid-row-gap: 92px;
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {
+    left: -100%;
   }
-  .carousel__buttons {
-    left: 36%;
-    top: 436px;
-    width: 365px;
+  to {
+    left: 0;
+  }
+}
+@keyframes move-right {
+  from {
+    left: -100%;
+  }
+  to {
+    left: -200%;
   }
 }
 @media (max-width: 1400px) {
-  .carousel__gallery {
+  .carousel__wrapper {
+    width: 940px;
+  }
+  .gallery {
     grid-template-columns: repeat(3, 294px);
     grid-template-rows: repeat(2, 354px);
     grid-column-gap: 29px;
@@ -692,13 +724,17 @@ body.lock {
     height: 294px;
   }
   .carousel__buttons {
-    left: 35%;
-    top: 368px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 294px;
   }
 }
 @media (max-width: 999px) {
-  .carousel__gallery {
+  .carousel__wrapper {
+    width: 599px;
+  }
+  .gallery {
     grid-template-columns: repeat(2, 285px);
     grid-template-rows: repeat(2, 332px);
   }
@@ -745,13 +781,21 @@ body.lock {
     height: 29.62px;
   }
   .carousel__buttons {
-    top: 342px;
-    left: 223px;
     width: 155px;
   }
 }
 @media (max-width: 639px) {
-  .carousel__gallery {
+  #left-items,
+#right-items {
+    display: none;
+  }
+  .carousel {
+    left: 0;
+  }
+  .carousel__wrapper {
+    width: 285px;
+  }
+  .gallery {
     grid-template-columns: repeat(1, 285px);
     grid-row-gap: 20px;
   }
