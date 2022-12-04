@@ -86,7 +86,7 @@
                 <div class="progress-bar__background">
                   <div class="progress-bar__background-line"></div>
                 </div>
-                <fieldset>
+                <fieldset id="fieldset">
                   <div>
                     <input class="progress-bar__input" type="radio" name="progress-bar" id="value5000" value="5000" />
                     <label class="progress-bar__label" for="value5000">$5000</label>
@@ -108,7 +108,8 @@
                     <label class="progress-bar__label" for="value250">$250</label>
                   </div>
                   <div>
-                    <input class="progress-bar__input" type="radio" name="progress-bar" id="value100" value="100" />
+                    <input class="progress-bar__input" type="radio" name="progress-bar" id="value100" value="100"
+                      checked />
                     <label class="progress-bar__label" for="value100">$100</label>
                   </div>
                   <div>
@@ -123,7 +124,7 @@
               </div>
               <div class="amount donate-form__amount flex">
                 <input type="number" id="amount" placeholder="Another amount" min="0" max="9999"
-                  onkeypress="limitKeypress(event,this.value,4)" title="Should be a 4 characters limit">
+                  title="Should be a 4 characters limit">
               </div>
               <div class="options donate-form__options ">
                 <div>
@@ -213,7 +214,7 @@
 
   <script src="../../js/burger-menu.js"></script>
   <script src="../../js/overlay.js"></script>
-  <script src="./index.js"></script>
+  <script src="../../js/donate-form.js"></script>
 </body>
 
 </html>
