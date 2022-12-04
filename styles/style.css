@@ -2038,10 +2038,11 @@ body.lock {
     margin-bottom: 84px;
   }
   .footer__logo .logo__img {
-    width: 100%;
+    width: 132px;
+    margin: 0 auto;
     height: auto;
     border: none;
-    background-position: bottom 6px left 158px;
+    background-position: bottom 6px left 74px;
   }
   .footer__social-nav {
     flex-direction: row;
