@@ -112,7 +112,7 @@
   margin-bottom: 13px;
 }
 .progress-bar__background-line {
-  width: 94%;
+  width: 93%;
   height: 2px;
   background: #72828e;
   z-index: 1;
@@ -289,26 +289,26 @@ input[type="number"]::-webkit-inner-spin-button {
     }
   }
   .donate {
-    padding: 20px 44px 46px 47px;
+    padding: 20px 44px 46px 44px;
     .donate-form {
       margin-bottom: 30px;
     }
   }
   .donate__title {
-    margin-bottom: 10px;
-    margin-left: 0px;
+    margin: 0px 13px 10px 0px;
   }
   .donate__subtitle {
     margin-bottom: 60px;
   }
   // PROGRESS BAR
   .progress-bar__title {
-    margin-left: 18px;
+    margin-left: 20px;
   }
   .progress-bar__background {
-    margin-bottom: 13px;
-    margin-left: 17px;
-    margin-right: 17px;
+    margin: 0px 20px 13px 20px;
+  }
+  .progress-bar__background-line {
+    width: 97%;
   }
   fieldset {
     margin-left: 17px;
@@ -322,12 +322,12 @@ input[type="number"]::-webkit-inner-spin-button {
   .progress-bar__input:not(:checked) + label::before,
   .progress-bar__input:checked + label::before {
     content: "";
-    left: 13px;
+    left: 15px;
   }
   .progress-bar__input:not(:checked) + label::after,
   .progress-bar__input:checked + label::after {
     content: "";
-    left: -3px;
+    left: 0px;
   }
   .donate-form__amount {
     margin-left: 0px;
@@ -411,6 +411,16 @@ input[type="number"]::-webkit-inner-spin-button {
   #value2000 + label,
   #value1000 + label {
     display: none;
+  }
+  .progress-bar__input:not(:checked) + label::before,
+  .progress-bar__input:checked + label::before {
+    content: "";
+    left: 18px;
+  }
+  .progress-bar__input:not(:checked) + label::after,
+  .progress-bar__input:checked + label::after {
+    content: "";
+    left: 2px;
   }
   input[type="number"] {
     width: 180px;

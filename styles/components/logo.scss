@@ -9,6 +9,11 @@
   background-position: bottom 6px left 10px;
   border: 1.18841px solid #ffffff;
   padding: 2px;
+  transition: transform 0.5s ease;
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(97%) saturate(1154%) hue-rotate(350deg) brightness(102%)
+      contrast(99%);
+  }
 }
 .logo__text {
   font-family: "Roboto";
@@ -18,11 +23,11 @@
   color: $color-white;
   text-align: center;
   transition: all 0.5s ease;
-  &:hover {
-    color: transparent;
-    -webkit-background-clip: text;
-    background-image: $color-orange;
-  }
+  // &:hover {
+  //   color: transparent;
+  //   -webkit-background-clip: text;
+  //   background-image: $color-orange;
+  // }
 }
 @media (max-width: 999px) {
   .header__logo {
